@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParndanaLabs.Lib.GtfsRealtimeClient", "src\ParndanaLabs.Lib.GtfsRealtimeClient\ParndanaLabs.Lib.GtfsRealtimeClient.csproj", "{FB757828-D6B7-484A-A7E3-E936F46BC6F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParndanaLabs.Lib.GtfsRealtimeModels", "src\ParndanaLabs.Lib.GtfsRealtimeModels\ParndanaLabs.Lib.GtfsRealtimeModels.csproj", "{FB757828-D6B7-484A-A7E3-E936F46BC6F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParndanaLabs.Lib.GtfsRealtimeClientTests", "tests\ParndanaLabs.Lib.GtfsRealtimeClientTests\ParndanaLabs.Lib.GtfsRealtimeClientTests.csproj", "{65E55C97-690F-4A8D-8800-352B6F4FA0EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParndanaLabs.Lib.GtfsRealtimeModelsTests", "tests\ParndanaLabs.Lib.GtfsRealtimeModelsTests\ParndanaLabs.Lib.GtfsRealtimeModelsTests.csproj", "{65E55C97-690F-4A8D-8800-352B6F4FA0EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

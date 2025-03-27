@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\ParndanaLabs.Lib.GtfsRealtimeClient\ParndanaLabs.Lib.GtfsRealtimeClient.csproj" />
+      <ProjectReference Include="..\..\src\ParndanaLabs.Lib.GtfsRealtimeModels\ParndanaLabs.Lib.GtfsRealtimeModels.csproj" />
     </ItemGroup>
 
 </Project>
