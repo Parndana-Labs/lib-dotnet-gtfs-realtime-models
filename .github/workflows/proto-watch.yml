@@ -26,6 +26,7 @@ jobs:
       - name: Fetch GTFS Realtime Proto file from Google Transit
         run: |
           curl -L https://raw.githubusercontent.com/google/transit/master/gtfs-realtime/proto/gtfs-realtime.proto -o gtfs-realtime.proto
+          sed -i 's/transit_realtime/ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime/g' file.txt
 
       - name: Compare with the previous version
         id: compare
@@ -44,7 +45,7 @@ jobs:
 
       - name: Generate C# from Proto file
         run: |
-          protoc --csharp_out=src/ParndanaLabs.Lib.GtfsRealtimeClient/ proto/gtfs-realtime.proto
+          protoc --csharp_out=src/ParndanaLabs.Lib.GtfsRealtimeModels/ proto/gtfs-realtime.proto
 
       - name: Build the Project
         run: |
@@ -59,6 +60,6 @@ jobs:
           git config --global user.name 'It-Is-Jeremy'
           git config --global user.email 'jeremyrobertsteele@gmail.com'
           git add proto/gtfs-realtime.proto
-          git add src/ParndanaLabs.Lib.GtfsRealtimeClient/
+          git add src/ParndanaLabs.Lib.GtfsRealtimeModels/
           git commit -m "feat: update project for new gtfs-realtime.proto file"
           git push origin main
