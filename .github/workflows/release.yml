@@ -38,4 +38,5 @@ jobs:
           
       - name: Publish to Nuget
         run: |
-          dotnet nuget push "ParndanaLabs.Lib.GtfsRealtimeModels" --api-key ${{secrets.MY_NUGET_TOKEN}} --source https://api.nuget.org/v3/index.json
+          VERSION=${${{github.event.release.tag_name}}#v}
+          dotnet nuget push src/ParndanaLabs.Lib.GtfsRealtimeModels/bin/Release/ParndanaLabs.Lib.GtfsRealtimeModels.Test.${VERSION}.nupkg --api-key ${{secrets.MY_NUGET_TOKEN}} --source https://api.nuget.org/v3/index.json
