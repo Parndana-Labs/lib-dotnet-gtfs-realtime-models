@@ -1,0 +1,64 @@
+name: Sync GTFS Realtime and Publish
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-gtfs-proto:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0'
+
+      - name: Fetch GTFS Realtime Proto file from Google Transit
+        run: |
+          curl -L https://raw.githubusercontent.com/google/transit/master/gtfs-realtime/proto/gtfs-realtime.proto -o gtfs-realtime.proto
+
+      - name: Compare with the previous version
+        id: compare
+        run: |
+          # Check if the proto file has changed compared to the one in your repo
+          git diff --quiet gtfs-realtime.proto proto/gtfs-realtime.proto || echo "Proto file changed"
+
+      - name: Commit new proto file if updated
+        if: steps.compare.outputs.changed == 'Proto file changed'
+        run: |
+          cp gtfs-realtime.proto proto/gtfs-realtime.proto
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get install -y protobuf-compiler
+
+      - name: Generate C# from Proto file
+        run: |
+          protoc --csharp_out=src/ParndanaLabs.Lib.GtfsRealtimeClient/ proto/gtfs-realtime.proto
+
+      - name: Build the Project
+        run: |
+          dotnet build
+          
+      - name: Test the Project
+        run: |
+          dotnet test
+
+      - name: Commit
+        run: |
+          git config --global user.name 'It-Is-Jeremy'
+          git config --global user.email 'jeremyrobertsteele@gmail.com'
+          git add proto/gtfs-realtime.proto
+          git add src/ParndanaLabs.Lib.GtfsRealtimeClient/
+          git commit -m "feat: update project for new gtfs-realtime.proto file"
+          git push origin main
