@@ -1,6 +1,6 @@
 using TransitRealtime;
 
-namespace ParndanaLabs.Lib.GtfsRealtimeClientTests;
+namespace ParndanaLabs.Lib.GtfsRealtimeModelsTests;
 
 public class GtfsRealtimeTests
 {

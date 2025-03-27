@@ -7,7 +7,7 @@
 
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
-        <RootNamespace>ParndanaLabs.Lib.GtfsRealtimeClientTests</RootNamespace>
+        <RootNamespace>ParndanaLabs.Lib.GtfsRealtimeModelsTests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

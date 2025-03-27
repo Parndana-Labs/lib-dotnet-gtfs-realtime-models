@@ -4,7 +4,11 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>ParndanaLabs.Lib.GtfsRealtimeClient</RootNamespace>
+        <RootNamespace>ParndanaLabs.Lib.GtfsRealtimeModels</RootNamespace>
+        <PackageId>ParndanaLabs.Lib.GtfsRealtimeModels.Test</PackageId>
+        <Version>0.0.1</Version>
+        <Authors>Jeremy Scott</Authors>
+        <Company>Parndana-Labs</Company>
     </PropertyGroup>
 
     <ItemGroup>

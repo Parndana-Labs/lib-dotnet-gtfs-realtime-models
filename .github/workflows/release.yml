@@ -1,19 +1,40 @@
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [published]
 
-permissions:
-  contents: write
-  pull-requests: write
 
-name: release-please
+name: Build and Release
 
 jobs:
-  release-please:
+  build-and-release:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
     steps:
-      - uses: googleapis/release-please-action@v4
+      - name: Checkout code
+        uses: actions/checkout@v2
         with:
-          token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
-          release-type: simple
+          fetch-depth: 0
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0'
+
+      - name: Build the Project
+        run: |
+          dotnet build
+
+      - name: Test the Project
+        run: |
+          dotnet test
+
+      - name: Pack the Project
+        run: |
+          dotnet pack -p:version=${{ github.event.release.tag_name }}
+          
+      - name: Publish to Nuget
+        run: |
+          dotnet nuget push "ParndanaLabs.Lib.GtfsRealtimeModels" --api-key ${{secrets.MY_NUGET_TOKEN}} --source https://api.nuget.org/v3/index.json
