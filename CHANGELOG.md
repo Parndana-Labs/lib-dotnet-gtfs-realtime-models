@@ -3,6 +3,13 @@
 ## [0.0.2](https://github.com/Parndana-Labs/lib-dotnet-gtfs-realtime-models/compare/v0.0.1...v0.0.2) (2025-03-27)
 
 
+### Bug Fixes
+
+* minor fixes ([3bd0f95](https://github.com/Parndana-Labs/lib-dotnet-gtfs-realtime-models/commit/3bd0f9537475b9dda8db9910090c99e2b3e6be9c))
+
+## [0.0.2](https://github.com/Parndana-Labs/lib-dotnet-gtfs-realtime-models/compare/v0.0.1...v0.0.2) (2025-03-27)
+
+
 ### Miscellaneous Chores
 
 * release 0.0.2 ([c03e13e](https://github.com/Parndana-Labs/lib-dotnet-gtfs-realtime-models/commit/c03e13e80249787942dc362ba7d5ffeecb42a3eb))
