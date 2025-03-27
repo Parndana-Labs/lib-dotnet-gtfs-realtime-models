@@ -33,7 +33,7 @@ jobs:
 
       - name: Pack the Project
         run: |
-          VERSION=${github.event.release.tag_name#v}
+          VERSION=${${{github.event.release.tag_name}}#v}
           dotnet pack -p:version=${VERSION}
           
       - name: Publish to Nuget
