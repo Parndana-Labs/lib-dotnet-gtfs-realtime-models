@@ -5,7 +5,8 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <RootNamespace>ParndanaLabs.Lib.GtfsRealtimeModels</RootNamespace>
-        <PackageId>ParndanaLabs.Lib.GtfsRealtimeModels.Test</PackageId>
+        <PackageId>ParndanaLabs.Lib.GtfsRealtimeModels</PackageId>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <Version>0.0.1</Version>
         <Authors>Jeremy Scott</Authors>
         <Company>Parndana-Labs</Company>

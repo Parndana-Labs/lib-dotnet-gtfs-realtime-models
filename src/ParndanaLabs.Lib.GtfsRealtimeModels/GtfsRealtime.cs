@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace TransitRealtime {
+namespace ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime {
 
   /// <summary>Holder for reflection information generated from proto/gtfs-realtime.proto</summary>
   public static partial class GtfsRealtimeReflection {
@@ -24,135 +24,163 @@ namespace TransitRealtime {
     static GtfsRealtimeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Chlwcm90by9ndGZzLXJlYWx0aW1lLnByb3RvEhB0cmFuc2l0X3JlYWx0aW1l",
-            "InkKC0ZlZWRNZXNzYWdlEiwKBmhlYWRlchgBIAIoCzIcLnRyYW5zaXRfcmVh",
-            "bHRpbWUuRmVlZEhlYWRlchIsCgZlbnRpdHkYAiADKAsyHC50cmFuc2l0X3Jl",
-            "YWx0aW1lLkZlZWRFbnRpdHkqBgjoBxDQDyoGCKhGEJBOItcBCgpGZWVkSGVh",
-            "ZGVyEh0KFWd0ZnNfcmVhbHRpbWVfdmVyc2lvbhgBIAIoCRJRCg5pbmNyZW1l",
-            "bnRhbGl0eRgCIAEoDjIrLnRyYW5zaXRfcmVhbHRpbWUuRmVlZEhlYWRlci5J",
-            "bmNyZW1lbnRhbGl0eToMRlVMTF9EQVRBU0VUEhEKCXRpbWVzdGFtcBgDIAEo",
-            "BCI0Cg5JbmNyZW1lbnRhbGl0eRIQCgxGVUxMX0RBVEFTRVQQABIQCgxESUZG",
-            "RVJFTlRJQUwQASoGCOgHENAPKgYIqEYQkE4i0gEKCkZlZWRFbnRpdHkSCgoC",
-            "aWQYASACKAkSGQoKaXNfZGVsZXRlZBgCIAEoCDoFZmFsc2USMQoLdHJpcF91",
-            "cGRhdGUYAyABKAsyHC50cmFuc2l0X3JlYWx0aW1lLlRyaXBVcGRhdGUSMgoH",
-            "dmVoaWNsZRgEIAEoCzIhLnRyYW5zaXRfcmVhbHRpbWUuVmVoaWNsZVBvc2l0",
-            "aW9uEiYKBWFsZXJ0GAUgASgLMhcudHJhbnNpdF9yZWFsdGltZS5BbGVydCoG",
-            "COgHENAPKgYIqEYQkE4igggKClRyaXBVcGRhdGUSLgoEdHJpcBgBIAIoCzIg",
-            "LnRyYW5zaXRfcmVhbHRpbWUuVHJpcERlc2NyaXB0b3ISNAoHdmVoaWNsZRgD",
-            "IAEoCzIjLnRyYW5zaXRfcmVhbHRpbWUuVmVoaWNsZURlc2NyaXB0b3ISRQoQ",
-            "c3RvcF90aW1lX3VwZGF0ZRgCIAMoCzIrLnRyYW5zaXRfcmVhbHRpbWUuVHJp",
-            "cFVwZGF0ZS5TdG9wVGltZVVwZGF0ZRIRCgl0aW1lc3RhbXAYBCABKAQSDQoF",
-            "ZGVsYXkYBSABKAUSRAoPdHJpcF9wcm9wZXJ0aWVzGAYgASgLMisudHJhbnNp",
-            "dF9yZWFsdGltZS5UcmlwVXBkYXRlLlRyaXBQcm9wZXJ0aWVzGlEKDVN0b3BU",
-            "aW1lRXZlbnQSDQoFZGVsYXkYASABKAUSDAoEdGltZRgCIAEoAxITCgt1bmNl",
-            "cnRhaW50eRgDIAEoBSoGCOgHENAPKgYIqEYQkE4aoAQKDlN0b3BUaW1lVXBk",
-            "YXRlEhUKDXN0b3Bfc2VxdWVuY2UYASABKA0SDwoHc3RvcF9pZBgEIAEoCRI7",
-            "CgdhcnJpdmFsGAIgASgLMioudHJhbnNpdF9yZWFsdGltZS5UcmlwVXBkYXRl",
-            "LlN0b3BUaW1lRXZlbnQSPQoJZGVwYXJ0dXJlGAMgASgLMioudHJhbnNpdF9y",
-            "ZWFsdGltZS5UcmlwVXBkYXRlLlN0b3BUaW1lRXZlbnQSagoVc2NoZWR1bGVf",
-            "cmVsYXRpb25zaGlwGAUgASgOMkAudHJhbnNpdF9yZWFsdGltZS5UcmlwVXBk",
-            "YXRlLlN0b3BUaW1lVXBkYXRlLlNjaGVkdWxlUmVsYXRpb25zaGlwOglTQ0hF",
-            "RFVMRUQSXAoUc3RvcF90aW1lX3Byb3BlcnRpZXMYBiABKAsyPi50cmFuc2l0",
-            "X3JlYWx0aW1lLlRyaXBVcGRhdGUuU3RvcFRpbWVVcGRhdGUuU3RvcFRpbWVQ",
-            "cm9wZXJ0aWVzGj4KElN0b3BUaW1lUHJvcGVydGllcxIYChBhc3NpZ25lZF9z",
-            "dG9wX2lkGAEgASgJKgYI6AcQ0A8qBgioRhCQTiJQChRTY2hlZHVsZVJlbGF0",
-            "aW9uc2hpcBINCglTQ0hFRFVMRUQQABILCgdTS0lQUEVEEAESCwoHTk9fREFU",
-            "QRACEg8KC1VOU0NIRURVTEVEEAMqBgjoBxDQDyoGCKhGEJBOGlkKDlRyaXBQ",
-            "cm9wZXJ0aWVzEg8KB3RyaXBfaWQYASABKAkSEgoKc3RhcnRfZGF0ZRgCIAEo",
-            "CRISCgpzdGFydF90aW1lGAMgASgJKgYI6AcQ0A8qBgioRhCQTioGCOgHENAP",
-            "KgYIqEYQkE4i3wkKD1ZlaGljbGVQb3NpdGlvbhIuCgR0cmlwGAEgASgLMiAu",
-            "dHJhbnNpdF9yZWFsdGltZS5UcmlwRGVzY3JpcHRvchI0Cgd2ZWhpY2xlGAgg",
-            "ASgLMiMudHJhbnNpdF9yZWFsdGltZS5WZWhpY2xlRGVzY3JpcHRvchIsCghw",
-            "b3NpdGlvbhgCIAEoCzIaLnRyYW5zaXRfcmVhbHRpbWUuUG9zaXRpb24SHQoV",
-            "Y3VycmVudF9zdG9wX3NlcXVlbmNlGAMgASgNEg8KB3N0b3BfaWQYByABKAkS",
-            "WgoOY3VycmVudF9zdGF0dXMYBCABKA4yMy50cmFuc2l0X3JlYWx0aW1lLlZl",
-            "aGljbGVQb3NpdGlvbi5WZWhpY2xlU3RvcFN0YXR1czoNSU5fVFJBTlNJVF9U",
-            "TxIRCgl0aW1lc3RhbXAYBSABKAQSSwoQY29uZ2VzdGlvbl9sZXZlbBgGIAEo",
-            "DjIxLnRyYW5zaXRfcmVhbHRpbWUuVmVoaWNsZVBvc2l0aW9uLkNvbmdlc3Rp",
-            "b25MZXZlbBJLChBvY2N1cGFuY3lfc3RhdHVzGAkgASgOMjEudHJhbnNpdF9y",
-            "ZWFsdGltZS5WZWhpY2xlUG9zaXRpb24uT2NjdXBhbmN5U3RhdHVzEhwKFG9j",
-            "Y3VwYW5jeV9wZXJjZW50YWdlGAogASgNElEKFm11bHRpX2NhcnJpYWdlX2Rl",
-            "dGFpbHMYCyADKAsyMS50cmFuc2l0X3JlYWx0aW1lLlZlaGljbGVQb3NpdGlv",
-            "bi5DYXJyaWFnZURldGFpbHMa2QEKD0NhcnJpYWdlRGV0YWlscxIKCgJpZBgB",
-            "IAEoCRINCgVsYWJlbBgCIAEoCRJeChBvY2N1cGFuY3lfc3RhdHVzGAMgASgO",
-            "MjEudHJhbnNpdF9yZWFsdGltZS5WZWhpY2xlUG9zaXRpb24uT2NjdXBhbmN5",
-            "U3RhdHVzOhFOT19EQVRBX0FWQUlMQUJMRRIgChRvY2N1cGFuY3lfcGVyY2Vu",
-            "dGFnZRgEIAEoBToCLTESGQoRY2FycmlhZ2Vfc2VxdWVuY2UYBSABKA0qBgjo",
-            "BxDQDyoGCKhGEJBOIkcKEVZlaGljbGVTdG9wU3RhdHVzEg8KC0lOQ09NSU5H",
-            "X0FUEAASDgoKU1RPUFBFRF9BVBABEhEKDUlOX1RSQU5TSVRfVE8QAiJ9Cg9D",
-            "b25nZXN0aW9uTGV2ZWwSHAoYVU5LTk9XTl9DT05HRVNUSU9OX0xFVkVMEAAS",
-            "FAoQUlVOTklOR19TTU9PVEhMWRABEg8KC1NUT1BfQU5EX0dPEAISDgoKQ09O",
-            "R0VTVElPThADEhUKEVNFVkVSRV9DT05HRVNUSU9OEAQi2QEKD09jY3VwYW5j",
-            "eVN0YXR1cxIJCgVFTVBUWRAAEhgKFE1BTllfU0VBVFNfQVZBSUxBQkxFEAES",
-            "FwoTRkVXX1NFQVRTX0FWQUlMQUJMRRACEhYKElNUQU5ESU5HX1JPT01fT05M",
-            "WRADEh4KGkNSVVNIRURfU1RBTkRJTkdfUk9PTV9PTkxZEAQSCAoERlVMTBAF",
-            "EhwKGE5PVF9BQ0NFUFRJTkdfUEFTU0VOR0VSUxAGEhUKEU5PX0RBVEFfQVZB",
-            "SUxBQkxFEAcSEQoNTk9UX0JPQVJEQUJMRRAIKgYI6AcQ0A8qBgioRhCQTiKA",
-            "CQoFQWxlcnQSMgoNYWN0aXZlX3BlcmlvZBgBIAMoCzIbLnRyYW5zaXRfcmVh",
-            "bHRpbWUuVGltZVJhbmdlEjkKD2luZm9ybWVkX2VudGl0eRgFIAMoCzIgLnRy",
-            "YW5zaXRfcmVhbHRpbWUuRW50aXR5U2VsZWN0b3ISOwoFY2F1c2UYBiABKA4y",
-            "HS50cmFuc2l0X3JlYWx0aW1lLkFsZXJ0LkNhdXNlOg1VTktOT1dOX0NBVVNF",
-            "Ej4KBmVmZmVjdBgHIAEoDjIeLnRyYW5zaXRfcmVhbHRpbWUuQWxlcnQuRWZm",
-            "ZWN0Og5VTktOT1dOX0VGRkVDVBIvCgN1cmwYCCABKAsyIi50cmFuc2l0X3Jl",
-            "YWx0aW1lLlRyYW5zbGF0ZWRTdHJpbmcSNwoLaGVhZGVyX3RleHQYCiABKAsy",
-            "Ii50cmFuc2l0X3JlYWx0aW1lLlRyYW5zbGF0ZWRTdHJpbmcSPAoQZGVzY3Jp",
-            "cHRpb25fdGV4dBgLIAEoCzIiLnRyYW5zaXRfcmVhbHRpbWUuVHJhbnNsYXRl",
-            "ZFN0cmluZxI7Cg90dHNfaGVhZGVyX3RleHQYDCABKAsyIi50cmFuc2l0X3Jl",
-            "YWx0aW1lLlRyYW5zbGF0ZWRTdHJpbmcSQAoUdHRzX2Rlc2NyaXB0aW9uX3Rl",
-            "eHQYDSABKAsyIi50cmFuc2l0X3JlYWx0aW1lLlRyYW5zbGF0ZWRTdHJpbmcS",
-            "TwoOc2V2ZXJpdHlfbGV2ZWwYDiABKA4yJS50cmFuc2l0X3JlYWx0aW1lLkFs",
-            "ZXJ0LlNldmVyaXR5TGV2ZWw6EFVOS05PV05fU0VWRVJJVFki2AEKBUNhdXNl",
-            "EhEKDVVOS05PV05fQ0FVU0UQARIPCgtPVEhFUl9DQVVTRRACEhUKEVRFQ0hO",
-            "SUNBTF9QUk9CTEVNEAMSCgoGU1RSSUtFEAQSEQoNREVNT05TVFJBVElPThAF",
-            "EgwKCEFDQ0lERU5UEAYSCwoHSE9MSURBWRAHEgsKB1dFQVRIRVIQCBIPCgtN",
-            "QUlOVEVOQU5DRRAJEhAKDENPTlNUUlVDVElPThAKEhMKD1BPTElDRV9BQ1RJ",
-            "VklUWRALEhUKEU1FRElDQUxfRU1FUkdFTkNZEAwi3QEKBkVmZmVjdBIOCgpO",
-            "T19TRVJWSUNFEAESEwoPUkVEVUNFRF9TRVJWSUNFEAISFgoSU0lHTklGSUNB",
-            "TlRfREVMQVlTEAMSCgoGREVUT1VSEAQSFgoSQURESVRJT05BTF9TRVJWSUNF",
-            "EAUSFAoQTU9ESUZJRURfU0VSVklDRRAGEhAKDE9USEVSX0VGRkVDVBAHEhIK",
-            "DlVOS05PV05fRUZGRUNUEAgSDgoKU1RPUF9NT1ZFRBAJEg0KCU5PX0VGRkVD",
-            "VBAKEhcKE0FDQ0VTU0lCSUxJVFlfSVNTVUUQCyJICg1TZXZlcml0eUxldmVs",
-            "EhQKEFVOS05PV05fU0VWRVJJVFkQARIICgRJTkZPEAISCwoHV0FSTklORxAD",
-            "EgoKBlNFVkVSRRAEKgYI6AcQ0A8qBgioRhCQTiI3CglUaW1lUmFuZ2USDQoF",
-            "c3RhcnQYASABKAQSCwoDZW5kGAIgASgEKgYI6AcQ0A8qBgioRhCQTiJxCghQ",
-            "b3NpdGlvbhIQCghsYXRpdHVkZRgBIAIoAhIRCglsb25naXR1ZGUYAiACKAIS",
-            "DwoHYmVhcmluZxgDIAEoAhIQCghvZG9tZXRlchgEIAEoARINCgVzcGVlZBgF",
-            "IAEoAioGCOgHENAPKgYIqEYQkE4izQIKDlRyaXBEZXNjcmlwdG9yEg8KB3Ry",
-            "aXBfaWQYASABKAkSEAoIcm91dGVfaWQYBSABKAkSFAoMZGlyZWN0aW9uX2lk",
-            "GAYgASgNEhIKCnN0YXJ0X3RpbWUYAiABKAkSEgoKc3RhcnRfZGF0ZRgDIAEo",
-            "CRJUChVzY2hlZHVsZV9yZWxhdGlvbnNoaXAYBCABKA4yNS50cmFuc2l0X3Jl",
-            "YWx0aW1lLlRyaXBEZXNjcmlwdG9yLlNjaGVkdWxlUmVsYXRpb25zaGlwInQK",
-            "FFNjaGVkdWxlUmVsYXRpb25zaGlwEg0KCVNDSEVEVUxFRBAAEgkKBUFEREVE",
-            "EAESDwoLVU5TQ0hFRFVMRUQQAhIMCghDQU5DRUxFRBADEhMKC1JFUExBQ0VN",
-            "RU5UEAUaAggBEg4KCkRVUExJQ0FURUQQBioGCOgHENAPKgYIqEYQkE4iVQoR",
-            "VmVoaWNsZURlc2NyaXB0b3ISCgoCaWQYASABKAkSDQoFbGFiZWwYAiABKAkS",
-            "FQoNbGljZW5zZV9wbGF0ZRgDIAEoCSoGCOgHENAPKgYIqEYQkE4isAEKDkVu",
-            "dGl0eVNlbGVjdG9yEhEKCWFnZW5jeV9pZBgBIAEoCRIQCghyb3V0ZV9pZBgC",
-            "IAEoCRISCgpyb3V0ZV90eXBlGAMgASgFEi4KBHRyaXAYBCABKAsyIC50cmFu",
-            "c2l0X3JlYWx0aW1lLlRyaXBEZXNjcmlwdG9yEg8KB3N0b3BfaWQYBSABKAkS",
-            "FAoMZGlyZWN0aW9uX2lkGAYgASgNKgYI6AcQ0A8qBgioRhCQTiKmAQoQVHJh",
-            "bnNsYXRlZFN0cmluZxJDCgt0cmFuc2xhdGlvbhgBIAMoCzIuLnRyYW5zaXRf",
-            "cmVhbHRpbWUuVHJhbnNsYXRlZFN0cmluZy5UcmFuc2xhdGlvbho9CgtUcmFu",
-            "c2xhdGlvbhIMCgR0ZXh0GAEgAigJEhAKCGxhbmd1YWdlGAIgASgJKgYI6AcQ",
-            "0A8qBgioRhCQTioGCOgHENAPKgYIqEYQkE5CHQobY29tLmdvb2dsZS50cmFu",
-            "c2l0LnJlYWx0aW1l"));
+            "Chlwcm90by9ndGZzLXJlYWx0aW1lLnByb3RvEjNQYXJuZGFuYUxhYnMuTGli",
+            "Lkd0ZnNSZWFsdGltZU1vZGVscy5UcmFuc2l0UmVhbHRpbWUivwEKC0ZlZWRN",
+            "ZXNzYWdlEk8KBmhlYWRlchgBIAIoCzI/LlBhcm5kYW5hTGFicy5MaWIuR3Rm",
+            "c1JlYWx0aW1lTW9kZWxzLlRyYW5zaXRSZWFsdGltZS5GZWVkSGVhZGVyEk8K",
+            "BmVudGl0eRgCIAMoCzI/LlBhcm5kYW5hTGFicy5MaWIuR3Rmc1JlYWx0aW1l",
+            "TW9kZWxzLlRyYW5zaXRSZWFsdGltZS5GZWVkRW50aXR5KgYI6AcQ0A8qBgio",
+            "RhCQTiL6AQoKRmVlZEhlYWRlchIdChVndGZzX3JlYWx0aW1lX3ZlcnNpb24Y",
+            "ASACKAkSdAoOaW5jcmVtZW50YWxpdHkYAiABKA4yTi5QYXJuZGFuYUxhYnMu",
+            "TGliLkd0ZnNSZWFsdGltZU1vZGVscy5UcmFuc2l0UmVhbHRpbWUuRmVlZEhl",
+            "YWRlci5JbmNyZW1lbnRhbGl0eToMRlVMTF9EQVRBU0VUEhEKCXRpbWVzdGFt",
+            "cBgDIAEoBCI0Cg5JbmNyZW1lbnRhbGl0eRIQCgxGVUxMX0RBVEFTRVQQABIQ",
+            "CgxESUZGRVJFTlRJQUwQASoGCOgHENAPKgYIqEYQkE4iuwIKCkZlZWRFbnRp",
+            "dHkSCgoCaWQYASACKAkSGQoKaXNfZGVsZXRlZBgCIAEoCDoFZmFsc2USVAoL",
+            "dHJpcF91cGRhdGUYAyABKAsyPy5QYXJuZGFuYUxhYnMuTGliLkd0ZnNSZWFs",
+            "dGltZU1vZGVscy5UcmFuc2l0UmVhbHRpbWUuVHJpcFVwZGF0ZRJVCgd2ZWhp",
+            "Y2xlGAQgASgLMkQuUGFybmRhbmFMYWJzLkxpYi5HdGZzUmVhbHRpbWVNb2Rl",
+            "bHMuVHJhbnNpdFJlYWx0aW1lLlZlaGljbGVQb3NpdGlvbhJJCgVhbGVydBgF",
+            "IAEoCzI6LlBhcm5kYW5hTGFicy5MaWIuR3Rmc1JlYWx0aW1lTW9kZWxzLlRy",
+            "YW5zaXRSZWFsdGltZS5BbGVydCoGCOgHENAPKgYIqEYQkE4imwoKClRyaXBV",
+            "cGRhdGUSUQoEdHJpcBgBIAIoCzJDLlBhcm5kYW5hTGFicy5MaWIuR3Rmc1Jl",
+            "YWx0aW1lTW9kZWxzLlRyYW5zaXRSZWFsdGltZS5UcmlwRGVzY3JpcHRvchJX",
+            "Cgd2ZWhpY2xlGAMgASgLMkYuUGFybmRhbmFMYWJzLkxpYi5HdGZzUmVhbHRp",
+            "bWVNb2RlbHMuVHJhbnNpdFJlYWx0aW1lLlZlaGljbGVEZXNjcmlwdG9yEmgK",
+            "EHN0b3BfdGltZV91cGRhdGUYAiADKAsyTi5QYXJuZGFuYUxhYnMuTGliLkd0",
+            "ZnNSZWFsdGltZU1vZGVscy5UcmFuc2l0UmVhbHRpbWUuVHJpcFVwZGF0ZS5T",
+            "dG9wVGltZVVwZGF0ZRIRCgl0aW1lc3RhbXAYBCABKAQSDQoFZGVsYXkYBSAB",
+            "KAUSZwoPdHJpcF9wcm9wZXJ0aWVzGAYgASgLMk4uUGFybmRhbmFMYWJzLkxp",
+            "Yi5HdGZzUmVhbHRpbWVNb2RlbHMuVHJhbnNpdFJlYWx0aW1lLlRyaXBVcGRh",
+            "dGUuVHJpcFByb3BlcnRpZXMaUQoNU3RvcFRpbWVFdmVudBINCgVkZWxheRgB",
+            "IAEoBRIMCgR0aW1lGAIgASgDEhMKC3VuY2VydGFpbnR5GAMgASgFKgYI6AcQ",
+            "0A8qBgioRhCQThqtBQoOU3RvcFRpbWVVcGRhdGUSFQoNc3RvcF9zZXF1ZW5j",
+            "ZRgBIAEoDRIPCgdzdG9wX2lkGAQgASgJEl4KB2Fycml2YWwYAiABKAsyTS5Q",
+            "YXJuZGFuYUxhYnMuTGliLkd0ZnNSZWFsdGltZU1vZGVscy5UcmFuc2l0UmVh",
+            "bHRpbWUuVHJpcFVwZGF0ZS5TdG9wVGltZUV2ZW50EmAKCWRlcGFydHVyZRgD",
+            "IAEoCzJNLlBhcm5kYW5hTGFicy5MaWIuR3Rmc1JlYWx0aW1lTW9kZWxzLlRy",
+            "YW5zaXRSZWFsdGltZS5UcmlwVXBkYXRlLlN0b3BUaW1lRXZlbnQSjQEKFXNj",
+            "aGVkdWxlX3JlbGF0aW9uc2hpcBgFIAEoDjJjLlBhcm5kYW5hTGFicy5MaWIu",
+            "R3Rmc1JlYWx0aW1lTW9kZWxzLlRyYW5zaXRSZWFsdGltZS5UcmlwVXBkYXRl",
+            "LlN0b3BUaW1lVXBkYXRlLlNjaGVkdWxlUmVsYXRpb25zaGlwOglTQ0hFRFVM",
+            "RUQSfwoUc3RvcF90aW1lX3Byb3BlcnRpZXMYBiABKAsyYS5QYXJuZGFuYUxh",
+            "YnMuTGliLkd0ZnNSZWFsdGltZU1vZGVscy5UcmFuc2l0UmVhbHRpbWUuVHJp",
+            "cFVwZGF0ZS5TdG9wVGltZVVwZGF0ZS5TdG9wVGltZVByb3BlcnRpZXMaPgoS",
+            "U3RvcFRpbWVQcm9wZXJ0aWVzEhgKEGFzc2lnbmVkX3N0b3BfaWQYASABKAkq",
+            "BgjoBxDQDyoGCKhGEJBOIlAKFFNjaGVkdWxlUmVsYXRpb25zaGlwEg0KCVND",
+            "SEVEVUxFRBAAEgsKB1NLSVBQRUQQARILCgdOT19EQVRBEAISDwoLVU5TQ0hF",
+            "RFVMRUQQAyoGCOgHENAPKgYIqEYQkE4aWQoOVHJpcFByb3BlcnRpZXMSDwoH",
+            "dHJpcF9pZBgBIAEoCRISCgpzdGFydF9kYXRlGAIgASgJEhIKCnN0YXJ0X3Rp",
+            "bWUYAyABKAkqBgjoBxDQDyoGCKhGEJBOKgYI6AcQ0A8qBgioRhCQTiL4CwoP",
+            "VmVoaWNsZVBvc2l0aW9uElEKBHRyaXAYASABKAsyQy5QYXJuZGFuYUxhYnMu",
+            "TGliLkd0ZnNSZWFsdGltZU1vZGVscy5UcmFuc2l0UmVhbHRpbWUuVHJpcERl",
+            "c2NyaXB0b3ISVwoHdmVoaWNsZRgIIAEoCzJGLlBhcm5kYW5hTGFicy5MaWIu",
+            "R3Rmc1JlYWx0aW1lTW9kZWxzLlRyYW5zaXRSZWFsdGltZS5WZWhpY2xlRGVz",
+            "Y3JpcHRvchJPCghwb3NpdGlvbhgCIAEoCzI9LlBhcm5kYW5hTGFicy5MaWIu",
+            "R3Rmc1JlYWx0aW1lTW9kZWxzLlRyYW5zaXRSZWFsdGltZS5Qb3NpdGlvbhId",
+            "ChVjdXJyZW50X3N0b3Bfc2VxdWVuY2UYAyABKA0SDwoHc3RvcF9pZBgHIAEo",
+            "CRJ9Cg5jdXJyZW50X3N0YXR1cxgEIAEoDjJWLlBhcm5kYW5hTGFicy5MaWIu",
+            "R3Rmc1JlYWx0aW1lTW9kZWxzLlRyYW5zaXRSZWFsdGltZS5WZWhpY2xlUG9z",
+            "aXRpb24uVmVoaWNsZVN0b3BTdGF0dXM6DUlOX1RSQU5TSVRfVE8SEQoJdGlt",
+            "ZXN0YW1wGAUgASgEEm4KEGNvbmdlc3Rpb25fbGV2ZWwYBiABKA4yVC5QYXJu",
+            "ZGFuYUxhYnMuTGliLkd0ZnNSZWFsdGltZU1vZGVscy5UcmFuc2l0UmVhbHRp",
+            "bWUuVmVoaWNsZVBvc2l0aW9uLkNvbmdlc3Rpb25MZXZlbBJuChBvY2N1cGFu",
+            "Y3lfc3RhdHVzGAkgASgOMlQuUGFybmRhbmFMYWJzLkxpYi5HdGZzUmVhbHRp",
+            "bWVNb2RlbHMuVHJhbnNpdFJlYWx0aW1lLlZlaGljbGVQb3NpdGlvbi5PY2N1",
+            "cGFuY3lTdGF0dXMSHAoUb2NjdXBhbmN5X3BlcmNlbnRhZ2UYCiABKA0SdAoW",
+            "bXVsdGlfY2FycmlhZ2VfZGV0YWlscxgLIAMoCzJULlBhcm5kYW5hTGFicy5M",
+            "aWIuR3Rmc1JlYWx0aW1lTW9kZWxzLlRyYW5zaXRSZWFsdGltZS5WZWhpY2xl",
+            "UG9zaXRpb24uQ2FycmlhZ2VEZXRhaWxzGv0BCg9DYXJyaWFnZURldGFpbHMS",
+            "CgoCaWQYASABKAkSDQoFbGFiZWwYAiABKAkSgQEKEG9jY3VwYW5jeV9zdGF0",
+            "dXMYAyABKA4yVC5QYXJuZGFuYUxhYnMuTGliLkd0ZnNSZWFsdGltZU1vZGVs",
+            "cy5UcmFuc2l0UmVhbHRpbWUuVmVoaWNsZVBvc2l0aW9uLk9jY3VwYW5jeVN0",
+            "YXR1czoRTk9fREFUQV9BVkFJTEFCTEUSIAoUb2NjdXBhbmN5X3BlcmNlbnRh",
+            "Z2UYBCABKAU6Ai0xEhkKEWNhcnJpYWdlX3NlcXVlbmNlGAUgASgNKgYI6AcQ",
+            "0A8qBgioRhCQTiJHChFWZWhpY2xlU3RvcFN0YXR1cxIPCgtJTkNPTUlOR19B",
+            "VBAAEg4KClNUT1BQRURfQVQQARIRCg1JTl9UUkFOU0lUX1RPEAIifQoPQ29u",
+            "Z2VzdGlvbkxldmVsEhwKGFVOS05PV05fQ09OR0VTVElPTl9MRVZFTBAAEhQK",
+            "EFJVTk5JTkdfU01PT1RITFkQARIPCgtTVE9QX0FORF9HTxACEg4KCkNPTkdF",
+            "U1RJT04QAxIVChFTRVZFUkVfQ09OR0VTVElPThAEItkBCg9PY2N1cGFuY3lT",
+            "dGF0dXMSCQoFRU1QVFkQABIYChRNQU5ZX1NFQVRTX0FWQUlMQUJMRRABEhcK",
+            "E0ZFV19TRUFUU19BVkFJTEFCTEUQAhIWChJTVEFORElOR19ST09NX09OTFkQ",
+            "AxIeChpDUlVTSEVEX1NUQU5ESU5HX1JPT01fT05MWRAEEggKBEZVTEwQBRIc",
+            "ChhOT1RfQUNDRVBUSU5HX1BBU1NFTkdFUlMQBhIVChFOT19EQVRBX0FWQUlM",
+            "QUJMRRAHEhEKDU5PVF9CT0FSREFCTEUQCCoGCOgHENAPKgYIqEYQkE4i3gsK",
+            "BUFsZXJ0ElUKDWFjdGl2ZV9wZXJpb2QYASADKAsyPi5QYXJuZGFuYUxhYnMu",
+            "TGliLkd0ZnNSZWFsdGltZU1vZGVscy5UcmFuc2l0UmVhbHRpbWUuVGltZVJh",
+            "bmdlElwKD2luZm9ybWVkX2VudGl0eRgFIAMoCzJDLlBhcm5kYW5hTGFicy5M",
+            "aWIuR3Rmc1JlYWx0aW1lTW9kZWxzLlRyYW5zaXRSZWFsdGltZS5FbnRpdHlT",
+            "ZWxlY3RvchJeCgVjYXVzZRgGIAEoDjJALlBhcm5kYW5hTGFicy5MaWIuR3Rm",
+            "c1JlYWx0aW1lTW9kZWxzLlRyYW5zaXRSZWFsdGltZS5BbGVydC5DYXVzZToN",
+            "VU5LTk9XTl9DQVVTRRJhCgZlZmZlY3QYByABKA4yQS5QYXJuZGFuYUxhYnMu",
+            "TGliLkd0ZnNSZWFsdGltZU1vZGVscy5UcmFuc2l0UmVhbHRpbWUuQWxlcnQu",
+            "RWZmZWN0Og5VTktOT1dOX0VGRkVDVBJSCgN1cmwYCCABKAsyRS5QYXJuZGFu",
+            "YUxhYnMuTGliLkd0ZnNSZWFsdGltZU1vZGVscy5UcmFuc2l0UmVhbHRpbWUu",
+            "VHJhbnNsYXRlZFN0cmluZxJaCgtoZWFkZXJfdGV4dBgKIAEoCzJFLlBhcm5k",
+            "YW5hTGFicy5MaWIuR3Rmc1JlYWx0aW1lTW9kZWxzLlRyYW5zaXRSZWFsdGlt",
+            "ZS5UcmFuc2xhdGVkU3RyaW5nEl8KEGRlc2NyaXB0aW9uX3RleHQYCyABKAsy",
+            "RS5QYXJuZGFuYUxhYnMuTGliLkd0ZnNSZWFsdGltZU1vZGVscy5UcmFuc2l0",
+            "UmVhbHRpbWUuVHJhbnNsYXRlZFN0cmluZxJeCg90dHNfaGVhZGVyX3RleHQY",
+            "DCABKAsyRS5QYXJuZGFuYUxhYnMuTGliLkd0ZnNSZWFsdGltZU1vZGVscy5U",
+            "cmFuc2l0UmVhbHRpbWUuVHJhbnNsYXRlZFN0cmluZxJjChR0dHNfZGVzY3Jp",
+            "cHRpb25fdGV4dBgNIAEoCzJFLlBhcm5kYW5hTGFicy5MaWIuR3Rmc1JlYWx0",
+            "aW1lTW9kZWxzLlRyYW5zaXRSZWFsdGltZS5UcmFuc2xhdGVkU3RyaW5nEnIK",
+            "DnNldmVyaXR5X2xldmVsGA4gASgOMkguUGFybmRhbmFMYWJzLkxpYi5HdGZz",
+            "UmVhbHRpbWVNb2RlbHMuVHJhbnNpdFJlYWx0aW1lLkFsZXJ0LlNldmVyaXR5",
+            "TGV2ZWw6EFVOS05PV05fU0VWRVJJVFki2AEKBUNhdXNlEhEKDVVOS05PV05f",
+            "Q0FVU0UQARIPCgtPVEhFUl9DQVVTRRACEhUKEVRFQ0hOSUNBTF9QUk9CTEVN",
+            "EAMSCgoGU1RSSUtFEAQSEQoNREVNT05TVFJBVElPThAFEgwKCEFDQ0lERU5U",
+            "EAYSCwoHSE9MSURBWRAHEgsKB1dFQVRIRVIQCBIPCgtNQUlOVEVOQU5DRRAJ",
+            "EhAKDENPTlNUUlVDVElPThAKEhMKD1BPTElDRV9BQ1RJVklUWRALEhUKEU1F",
+            "RElDQUxfRU1FUkdFTkNZEAwi3QEKBkVmZmVjdBIOCgpOT19TRVJWSUNFEAES",
+            "EwoPUkVEVUNFRF9TRVJWSUNFEAISFgoSU0lHTklGSUNBTlRfREVMQVlTEAMS",
+            "CgoGREVUT1VSEAQSFgoSQURESVRJT05BTF9TRVJWSUNFEAUSFAoQTU9ESUZJ",
+            "RURfU0VSVklDRRAGEhAKDE9USEVSX0VGRkVDVBAHEhIKDlVOS05PV05fRUZG",
+            "RUNUEAgSDgoKU1RPUF9NT1ZFRBAJEg0KCU5PX0VGRkVDVBAKEhcKE0FDQ0VT",
+            "U0lCSUxJVFlfSVNTVUUQCyJICg1TZXZlcml0eUxldmVsEhQKEFVOS05PV05f",
+            "U0VWRVJJVFkQARIICgRJTkZPEAISCwoHV0FSTklORxADEgoKBlNFVkVSRRAE",
+            "KgYI6AcQ0A8qBgioRhCQTiI3CglUaW1lUmFuZ2USDQoFc3RhcnQYASABKAQS",
+            "CwoDZW5kGAIgASgEKgYI6AcQ0A8qBgioRhCQTiJxCghQb3NpdGlvbhIQCghs",
+            "YXRpdHVkZRgBIAIoAhIRCglsb25naXR1ZGUYAiACKAISDwoHYmVhcmluZxgD",
+            "IAEoAhIQCghvZG9tZXRlchgEIAEoARINCgVzcGVlZBgFIAEoAioGCOgHENAP",
+            "KgYIqEYQkE4i8AIKDlRyaXBEZXNjcmlwdG9yEg8KB3RyaXBfaWQYASABKAkS",
+            "EAoIcm91dGVfaWQYBSABKAkSFAoMZGlyZWN0aW9uX2lkGAYgASgNEhIKCnN0",
+            "YXJ0X3RpbWUYAiABKAkSEgoKc3RhcnRfZGF0ZRgDIAEoCRJ3ChVzY2hlZHVs",
+            "ZV9yZWxhdGlvbnNoaXAYBCABKA4yWC5QYXJuZGFuYUxhYnMuTGliLkd0ZnNS",
+            "ZWFsdGltZU1vZGVscy5UcmFuc2l0UmVhbHRpbWUuVHJpcERlc2NyaXB0b3Iu",
+            "U2NoZWR1bGVSZWxhdGlvbnNoaXAidAoUU2NoZWR1bGVSZWxhdGlvbnNoaXAS",
+            "DQoJU0NIRURVTEVEEAASCQoFQURERUQQARIPCgtVTlNDSEVEVUxFRBACEgwK",
+            "CENBTkNFTEVEEAMSEwoLUkVQTEFDRU1FTlQQBRoCCAESDgoKRFVQTElDQVRF",
+            "RBAGKgYI6AcQ0A8qBgioRhCQTiJVChFWZWhpY2xlRGVzY3JpcHRvchIKCgJp",
+            "ZBgBIAEoCRINCgVsYWJlbBgCIAEoCRIVCg1saWNlbnNlX3BsYXRlGAMgASgJ",
+            "KgYI6AcQ0A8qBgioRhCQTiLTAQoORW50aXR5U2VsZWN0b3ISEQoJYWdlbmN5",
+            "X2lkGAEgASgJEhAKCHJvdXRlX2lkGAIgASgJEhIKCnJvdXRlX3R5cGUYAyAB",
+            "KAUSUQoEdHJpcBgEIAEoCzJDLlBhcm5kYW5hTGFicy5MaWIuR3Rmc1JlYWx0",
+            "aW1lTW9kZWxzLlRyYW5zaXRSZWFsdGltZS5UcmlwRGVzY3JpcHRvchIPCgdz",
+            "dG9wX2lkGAUgASgJEhQKDGRpcmVjdGlvbl9pZBgGIAEoDSoGCOgHENAPKgYI",
+            "qEYQkE4iyQEKEFRyYW5zbGF0ZWRTdHJpbmcSZgoLdHJhbnNsYXRpb24YASAD",
+            "KAsyUS5QYXJuZGFuYUxhYnMuTGliLkd0ZnNSZWFsdGltZU1vZGVscy5UcmFu",
+            "c2l0UmVhbHRpbWUuVHJhbnNsYXRlZFN0cmluZy5UcmFuc2xhdGlvbho9CgtU",
+            "cmFuc2xhdGlvbhIMCgR0ZXh0GAEgAigJEhAKCGxhbmd1YWdlGAIgASgJKgYI",
+            "6AcQ0A8qBgioRhCQTioGCOgHENAPKgYIqEYQkE5CHQobY29tLmdvb2dsZS50",
+            "cmFuc2l0LnJlYWx0aW1l"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.FeedMessage), global::TransitRealtime.FeedMessage.Parser, new[]{ "Header", "Entity" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.FeedHeader), global::TransitRealtime.FeedHeader.Parser, new[]{ "GtfsRealtimeVersion", "Incrementality", "Timestamp" }, null, new[]{ typeof(global::TransitRealtime.FeedHeader.Types.Incrementality) }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.FeedEntity), global::TransitRealtime.FeedEntity.Parser, new[]{ "Id", "IsDeleted", "TripUpdate", "Vehicle", "Alert" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.TripUpdate), global::TransitRealtime.TripUpdate.Parser, new[]{ "Trip", "Vehicle", "StopTimeUpdate", "Timestamp", "Delay", "TripProperties" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.TripUpdate.Types.StopTimeEvent), global::TransitRealtime.TripUpdate.Types.StopTimeEvent.Parser, new[]{ "Delay", "Time", "Uncertainty" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.TripUpdate.Types.StopTimeUpdate), global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Parser, new[]{ "StopSequence", "StopId", "Arrival", "Departure", "ScheduleRelationship", "StopTimeProperties" }, null, new[]{ typeof(global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.ScheduleRelationship) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.StopTimeProperties), global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.StopTimeProperties.Parser, new[]{ "AssignedStopId" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.TripUpdate.Types.TripProperties), global::TransitRealtime.TripUpdate.Types.TripProperties.Parser, new[]{ "TripId", "StartDate", "StartTime" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.VehiclePosition), global::TransitRealtime.VehiclePosition.Parser, new[]{ "Trip", "Vehicle", "Position", "CurrentStopSequence", "StopId", "CurrentStatus", "Timestamp", "CongestionLevel", "OccupancyStatus", "OccupancyPercentage", "MultiCarriageDetails" }, null, new[]{ typeof(global::TransitRealtime.VehiclePosition.Types.VehicleStopStatus), typeof(global::TransitRealtime.VehiclePosition.Types.CongestionLevel), typeof(global::TransitRealtime.VehiclePosition.Types.OccupancyStatus) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.VehiclePosition.Types.CarriageDetails), global::TransitRealtime.VehiclePosition.Types.CarriageDetails.Parser, new[]{ "Id", "Label", "OccupancyStatus", "OccupancyPercentage", "CarriageSequence" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.Alert), global::TransitRealtime.Alert.Parser, new[]{ "ActivePeriod", "InformedEntity", "Cause", "Effect", "Url", "HeaderText", "DescriptionText", "TtsHeaderText", "TtsDescriptionText", "SeverityLevel" }, null, new[]{ typeof(global::TransitRealtime.Alert.Types.Cause), typeof(global::TransitRealtime.Alert.Types.Effect), typeof(global::TransitRealtime.Alert.Types.SeverityLevel) }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.TimeRange), global::TransitRealtime.TimeRange.Parser, new[]{ "Start", "End" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.Position), global::TransitRealtime.Position.Parser, new[]{ "Latitude", "Longitude", "Bearing", "Odometer", "Speed" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.TripDescriptor), global::TransitRealtime.TripDescriptor.Parser, new[]{ "TripId", "RouteId", "DirectionId", "StartTime", "StartDate", "ScheduleRelationship" }, null, new[]{ typeof(global::TransitRealtime.TripDescriptor.Types.ScheduleRelationship) }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.VehicleDescriptor), global::TransitRealtime.VehicleDescriptor.Parser, new[]{ "Id", "Label", "LicensePlate" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.EntitySelector), global::TransitRealtime.EntitySelector.Parser, new[]{ "AgencyId", "RouteId", "RouteType", "Trip", "StopId", "DirectionId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.TranslatedString), global::TransitRealtime.TranslatedString.Parser, new[]{ "Translation" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::TransitRealtime.TranslatedString.Types.Translation), global::TransitRealtime.TranslatedString.Types.Translation.Parser, new[]{ "Text", "Language" }, null, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedMessage), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedMessage.Parser, new[]{ "Header", "Entity" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedHeader), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedHeader.Parser, new[]{ "GtfsRealtimeVersion", "Incrementality", "Timestamp" }, null, new[]{ typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedHeader.Types.Incrementality) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedEntity), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedEntity.Parser, new[]{ "Id", "IsDeleted", "TripUpdate", "Vehicle", "Alert" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Parser, new[]{ "Trip", "Vehicle", "StopTimeUpdate", "Timestamp", "Delay", "TripProperties" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeEvent), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeEvent.Parser, new[]{ "Delay", "Time", "Uncertainty" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Parser, new[]{ "StopSequence", "StopId", "Arrival", "Departure", "ScheduleRelationship", "StopTimeProperties" }, null, new[]{ typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.ScheduleRelationship) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.StopTimeProperties), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.StopTimeProperties.Parser, new[]{ "AssignedStopId" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.TripProperties), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.TripProperties.Parser, new[]{ "TripId", "StartDate", "StartTime" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Parser, new[]{ "Trip", "Vehicle", "Position", "CurrentStopSequence", "StopId", "CurrentStatus", "Timestamp", "CongestionLevel", "OccupancyStatus", "OccupancyPercentage", "MultiCarriageDetails" }, null, new[]{ typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.VehicleStopStatus), typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.CongestionLevel), typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.OccupancyStatus) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.CarriageDetails), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.CarriageDetails.Parser, new[]{ "Id", "Label", "OccupancyStatus", "OccupancyPercentage", "CarriageSequence" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Parser, new[]{ "ActivePeriod", "InformedEntity", "Cause", "Effect", "Url", "HeaderText", "DescriptionText", "TtsHeaderText", "TtsDescriptionText", "SeverityLevel" }, null, new[]{ typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.Cause), typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.Effect), typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.SeverityLevel) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TimeRange), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TimeRange.Parser, new[]{ "Start", "End" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Position), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Position.Parser, new[]{ "Latitude", "Longitude", "Bearing", "Odometer", "Speed" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor.Parser, new[]{ "TripId", "RouteId", "DirectionId", "StartTime", "StartDate", "ScheduleRelationship" }, null, new[]{ typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor.Types.ScheduleRelationship) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehicleDescriptor), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehicleDescriptor.Parser, new[]{ "Id", "Label", "LicensePlate" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.EntitySelector), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.EntitySelector.Parser, new[]{ "AgencyId", "RouteId", "RouteType", "Trip", "StopId", "DirectionId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString.Parser, new[]{ "Translation" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString.Types.Translation), global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString.Types.Translation.Parser, new[]{ "Text", "Language" }, null, null, null, null)})
           }));
     }
     #endregion
@@ -170,6 +198,7 @@ namespace TransitRealtime {
   /// https://github.com/google/transit/tree/master/gtfs-realtime for field
   /// semantic cardinality.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FeedMessage : pb::IExtendableMessage<FeedMessage>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -186,7 +215,7 @@ namespace TransitRealtime {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[0]; }
+      get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -220,13 +249,13 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "header" field.</summary>
     public const int HeaderFieldNumber = 1;
-    private global::TransitRealtime.FeedHeader header_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedHeader header_;
     /// <summary>
     /// Metadata about this feed and feed message.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.FeedHeader Header {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedHeader Header {
       get { return header_; }
       set {
         header_ = value;
@@ -235,15 +264,15 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "entity" field.</summary>
     public const int EntityFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::TransitRealtime.FeedEntity> _repeated_entity_codec
-        = pb::FieldCodec.ForMessage(18, global::TransitRealtime.FeedEntity.Parser);
-    private readonly pbc::RepeatedField<global::TransitRealtime.FeedEntity> entity_ = new pbc::RepeatedField<global::TransitRealtime.FeedEntity>();
+    private static readonly pb::FieldCodec<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedEntity> _repeated_entity_codec
+        = pb::FieldCodec.ForMessage(18, global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedEntity.Parser);
+    private readonly pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedEntity> entity_ = new pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedEntity>();
     /// <summary>
     /// Contents of the feed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::TransitRealtime.FeedEntity> Entity {
+    public pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedEntity> Entity {
       get { return entity_; }
     }
 
@@ -354,7 +383,7 @@ namespace TransitRealtime {
       }
       if (other.header_ != null) {
         if (header_ == null) {
-          Header = new global::TransitRealtime.FeedHeader();
+          Header = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedHeader();
         }
         Header.MergeFrom(other.Header);
       }
@@ -371,7 +400,11 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -379,7 +412,7 @@ namespace TransitRealtime {
             break;
           case 10: {
             if (header_ == null) {
-              Header = new global::TransitRealtime.FeedHeader();
+              Header = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedHeader();
             }
             input.ReadMessage(Header);
             break;
@@ -399,7 +432,11 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -407,7 +444,7 @@ namespace TransitRealtime {
             break;
           case 10: {
             if (header_ == null) {
-              Header = new global::TransitRealtime.FeedHeader();
+              Header = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedHeader();
             }
             input.ReadMessage(Header);
             break;
@@ -448,6 +485,7 @@ namespace TransitRealtime {
   /// <summary>
   /// Metadata about a feed, included in feed messages.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FeedHeader : pb::IExtendableMessage<FeedHeader>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -465,7 +503,7 @@ namespace TransitRealtime {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[1]; }
+      get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -531,12 +569,12 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "incrementality" field.</summary>
     public const int IncrementalityFieldNumber = 2;
-    private readonly static global::TransitRealtime.FeedHeader.Types.Incrementality IncrementalityDefaultValue = global::TransitRealtime.FeedHeader.Types.Incrementality.FullDataset;
+    private readonly static global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedHeader.Types.Incrementality IncrementalityDefaultValue = global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedHeader.Types.Incrementality.FullDataset;
 
-    private global::TransitRealtime.FeedHeader.Types.Incrementality incrementality_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedHeader.Types.Incrementality incrementality_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.FeedHeader.Types.Incrementality Incrementality {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedHeader.Types.Incrementality Incrementality {
       get { if ((_hasBits0 & 1) != 0) { return incrementality_; } else { return IncrementalityDefaultValue; } }
       set {
         _hasBits0 |= 1;
@@ -735,7 +773,11 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -746,7 +788,7 @@ namespace TransitRealtime {
             break;
           }
           case 16: {
-            Incrementality = (global::TransitRealtime.FeedHeader.Types.Incrementality) input.ReadEnum();
+            Incrementality = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedHeader.Types.Incrementality) input.ReadEnum();
             break;
           }
           case 24: {
@@ -764,7 +806,11 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -775,7 +821,7 @@ namespace TransitRealtime {
             break;
           }
           case 16: {
-            Incrementality = (global::TransitRealtime.FeedHeader.Types.Incrementality) input.ReadEnum();
+            Incrementality = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.FeedHeader.Types.Incrementality) input.ReadEnum();
             break;
           }
           case 24: {
@@ -834,6 +880,7 @@ namespace TransitRealtime {
   /// <summary>
   /// A definition (or update) of an entity in the transit feed.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FeedEntity : pb::IExtendableMessage<FeedEntity>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -851,7 +898,7 @@ namespace TransitRealtime {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[2]; }
+      get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -956,14 +1003,14 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "trip_update" field.</summary>
     public const int TripUpdateFieldNumber = 3;
-    private global::TransitRealtime.TripUpdate tripUpdate_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate tripUpdate_;
     /// <summary>
     /// Data about the entity itself. Exactly one of the following fields must be
     /// present (unless the entity is being deleted).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.TripUpdate TripUpdate {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate TripUpdate {
       get { return tripUpdate_; }
       set {
         tripUpdate_ = value;
@@ -972,10 +1019,10 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "vehicle" field.</summary>
     public const int VehicleFieldNumber = 4;
-    private global::TransitRealtime.VehiclePosition vehicle_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition vehicle_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.VehiclePosition Vehicle {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition Vehicle {
       get { return vehicle_; }
       set {
         vehicle_ = value;
@@ -984,10 +1031,10 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "alert" field.</summary>
     public const int AlertFieldNumber = 5;
-    private global::TransitRealtime.Alert alert_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert alert_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.Alert Alert {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert Alert {
       get { return alert_; }
       set {
         alert_ = value;
@@ -1154,19 +1201,19 @@ namespace TransitRealtime {
       }
       if (other.tripUpdate_ != null) {
         if (tripUpdate_ == null) {
-          TripUpdate = new global::TransitRealtime.TripUpdate();
+          TripUpdate = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate();
         }
         TripUpdate.MergeFrom(other.TripUpdate);
       }
       if (other.vehicle_ != null) {
         if (vehicle_ == null) {
-          Vehicle = new global::TransitRealtime.VehiclePosition();
+          Vehicle = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition();
         }
         Vehicle.MergeFrom(other.Vehicle);
       }
       if (other.alert_ != null) {
         if (alert_ == null) {
-          Alert = new global::TransitRealtime.Alert();
+          Alert = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert();
         }
         Alert.MergeFrom(other.Alert);
       }
@@ -1182,7 +1229,11 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -1198,21 +1249,21 @@ namespace TransitRealtime {
           }
           case 26: {
             if (tripUpdate_ == null) {
-              TripUpdate = new global::TransitRealtime.TripUpdate();
+              TripUpdate = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate();
             }
             input.ReadMessage(TripUpdate);
             break;
           }
           case 34: {
             if (vehicle_ == null) {
-              Vehicle = new global::TransitRealtime.VehiclePosition();
+              Vehicle = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition();
             }
             input.ReadMessage(Vehicle);
             break;
           }
           case 42: {
             if (alert_ == null) {
-              Alert = new global::TransitRealtime.Alert();
+              Alert = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert();
             }
             input.ReadMessage(Alert);
             break;
@@ -1228,7 +1279,11 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -1244,21 +1299,21 @@ namespace TransitRealtime {
           }
           case 26: {
             if (tripUpdate_ == null) {
-              TripUpdate = new global::TransitRealtime.TripUpdate();
+              TripUpdate = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate();
             }
             input.ReadMessage(TripUpdate);
             break;
           }
           case 34: {
             if (vehicle_ == null) {
-              Vehicle = new global::TransitRealtime.VehiclePosition();
+              Vehicle = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition();
             }
             input.ReadMessage(Vehicle);
             break;
           }
           case 42: {
             if (alert_ == null) {
-              Alert = new global::TransitRealtime.Alert();
+              Alert = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert();
             }
             input.ReadMessage(Alert);
             break;
@@ -1320,6 +1375,7 @@ namespace TransitRealtime {
   /// Note that the feed provider is allowed, but not required, to purge past
   /// updates - this is one case where this would be practically useful.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TripUpdate : pb::IExtendableMessage<TripUpdate>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1337,7 +1393,7 @@ namespace TransitRealtime {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[3]; }
+      get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1376,7 +1432,7 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "trip" field.</summary>
     public const int TripFieldNumber = 1;
-    private global::TransitRealtime.TripDescriptor trip_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor trip_;
     /// <summary>
     /// The Trip that this message applies to. There can be at most one
     /// TripUpdate entity for each actual trip instance.
@@ -1385,7 +1441,7 @@ namespace TransitRealtime {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.TripDescriptor Trip {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor Trip {
       get { return trip_; }
       set {
         trip_ = value;
@@ -1394,13 +1450,13 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "vehicle" field.</summary>
     public const int VehicleFieldNumber = 3;
-    private global::TransitRealtime.VehicleDescriptor vehicle_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehicleDescriptor vehicle_;
     /// <summary>
     /// Additional information on the vehicle that is serving this trip.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.VehicleDescriptor Vehicle {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehicleDescriptor Vehicle {
       get { return vehicle_; }
       set {
         vehicle_ = value;
@@ -1409,9 +1465,9 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "stop_time_update" field.</summary>
     public const int StopTimeUpdateFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::TransitRealtime.TripUpdate.Types.StopTimeUpdate> _repeated_stopTimeUpdate_codec
-        = pb::FieldCodec.ForMessage(18, global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Parser);
-    private readonly pbc::RepeatedField<global::TransitRealtime.TripUpdate.Types.StopTimeUpdate> stopTimeUpdate_ = new pbc::RepeatedField<global::TransitRealtime.TripUpdate.Types.StopTimeUpdate>();
+    private static readonly pb::FieldCodec<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate> _repeated_stopTimeUpdate_codec
+        = pb::FieldCodec.ForMessage(18, global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Parser);
+    private readonly pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate> stopTimeUpdate_ = new pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate>();
     /// <summary>
     /// Updates to StopTimes for the trip (both future, i.e., predictions, and in
     /// some cases, past ones, i.e., those that already happened).
@@ -1435,7 +1491,7 @@ namespace TransitRealtime {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::TransitRealtime.TripUpdate.Types.StopTimeUpdate> StopTimeUpdate {
+    public pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate> StopTimeUpdate {
       get { return stopTimeUpdate_; }
     }
 
@@ -1519,10 +1575,10 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "trip_properties" field.</summary>
     public const int TripPropertiesFieldNumber = 6;
-    private global::TransitRealtime.TripUpdate.Types.TripProperties tripProperties_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.TripProperties tripProperties_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.TripUpdate.Types.TripProperties TripProperties {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.TripProperties TripProperties {
       get { return tripProperties_; }
       set {
         tripProperties_ = value;
@@ -1688,13 +1744,13 @@ namespace TransitRealtime {
       }
       if (other.trip_ != null) {
         if (trip_ == null) {
-          Trip = new global::TransitRealtime.TripDescriptor();
+          Trip = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor();
         }
         Trip.MergeFrom(other.Trip);
       }
       if (other.vehicle_ != null) {
         if (vehicle_ == null) {
-          Vehicle = new global::TransitRealtime.VehicleDescriptor();
+          Vehicle = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehicleDescriptor();
         }
         Vehicle.MergeFrom(other.Vehicle);
       }
@@ -1707,7 +1763,7 @@ namespace TransitRealtime {
       }
       if (other.tripProperties_ != null) {
         if (tripProperties_ == null) {
-          TripProperties = new global::TransitRealtime.TripUpdate.Types.TripProperties();
+          TripProperties = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.TripProperties();
         }
         TripProperties.MergeFrom(other.TripProperties);
       }
@@ -1723,7 +1779,11 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -1731,7 +1791,7 @@ namespace TransitRealtime {
             break;
           case 10: {
             if (trip_ == null) {
-              Trip = new global::TransitRealtime.TripDescriptor();
+              Trip = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor();
             }
             input.ReadMessage(Trip);
             break;
@@ -1742,7 +1802,7 @@ namespace TransitRealtime {
           }
           case 26: {
             if (vehicle_ == null) {
-              Vehicle = new global::TransitRealtime.VehicleDescriptor();
+              Vehicle = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehicleDescriptor();
             }
             input.ReadMessage(Vehicle);
             break;
@@ -1757,7 +1817,7 @@ namespace TransitRealtime {
           }
           case 50: {
             if (tripProperties_ == null) {
-              TripProperties = new global::TransitRealtime.TripUpdate.Types.TripProperties();
+              TripProperties = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.TripProperties();
             }
             input.ReadMessage(TripProperties);
             break;
@@ -1773,7 +1833,11 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -1781,7 +1845,7 @@ namespace TransitRealtime {
             break;
           case 10: {
             if (trip_ == null) {
-              Trip = new global::TransitRealtime.TripDescriptor();
+              Trip = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor();
             }
             input.ReadMessage(Trip);
             break;
@@ -1792,7 +1856,7 @@ namespace TransitRealtime {
           }
           case 26: {
             if (vehicle_ == null) {
-              Vehicle = new global::TransitRealtime.VehicleDescriptor();
+              Vehicle = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehicleDescriptor();
             }
             input.ReadMessage(Vehicle);
             break;
@@ -1807,7 +1871,7 @@ namespace TransitRealtime {
           }
           case 50: {
             if (tripProperties_ == null) {
-              TripProperties = new global::TransitRealtime.TripUpdate.Types.TripProperties();
+              TripProperties = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.TripProperties();
             }
             input.ReadMessage(TripProperties);
             break;
@@ -1861,6 +1925,7 @@ namespace TransitRealtime {
       /// for the uncertainty to be 0, for example for trains that are driven under
       /// computer timing control.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class StopTimeEvent : pb::IExtendableMessage<StopTimeEvent>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1878,7 +1943,7 @@ namespace TransitRealtime {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::TransitRealtime.TripUpdate.Descriptor.NestedTypes[0]; }
+          get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Descriptor.NestedTypes[0]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2156,7 +2221,11 @@ namespace TransitRealtime {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -2185,7 +2254,11 @@ namespace TransitRealtime {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -2237,6 +2310,7 @@ namespace TransitRealtime {
       /// trip. Updates can be supplied for both past and future events.
       /// The producer is allowed, although not required, to drop past events.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class StopTimeUpdate : pb::IExtendableMessage<StopTimeUpdate>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -2254,7 +2328,7 @@ namespace TransitRealtime {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::TransitRealtime.TripUpdate.Descriptor.NestedTypes[1]; }
+          get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Descriptor.NestedTypes[1]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2352,10 +2426,10 @@ namespace TransitRealtime {
 
         /// <summary>Field number for the "arrival" field.</summary>
         public const int ArrivalFieldNumber = 2;
-        private global::TransitRealtime.TripUpdate.Types.StopTimeEvent arrival_;
+        private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeEvent arrival_;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public global::TransitRealtime.TripUpdate.Types.StopTimeEvent Arrival {
+        public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeEvent Arrival {
           get { return arrival_; }
           set {
             arrival_ = value;
@@ -2364,10 +2438,10 @@ namespace TransitRealtime {
 
         /// <summary>Field number for the "departure" field.</summary>
         public const int DepartureFieldNumber = 3;
-        private global::TransitRealtime.TripUpdate.Types.StopTimeEvent departure_;
+        private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeEvent departure_;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public global::TransitRealtime.TripUpdate.Types.StopTimeEvent Departure {
+        public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeEvent Departure {
           get { return departure_; }
           set {
             departure_ = value;
@@ -2376,12 +2450,12 @@ namespace TransitRealtime {
 
         /// <summary>Field number for the "schedule_relationship" field.</summary>
         public const int ScheduleRelationshipFieldNumber = 5;
-        private readonly static global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.ScheduleRelationship ScheduleRelationshipDefaultValue = global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.ScheduleRelationship.Scheduled;
+        private readonly static global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.ScheduleRelationship ScheduleRelationshipDefaultValue = global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.ScheduleRelationship.Scheduled;
 
-        private global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.ScheduleRelationship scheduleRelationship_;
+        private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.ScheduleRelationship scheduleRelationship_;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.ScheduleRelationship ScheduleRelationship {
+        public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.ScheduleRelationship ScheduleRelationship {
           get { if ((_hasBits0 & 2) != 0) { return scheduleRelationship_; } else { return ScheduleRelationshipDefaultValue; } }
           set {
             _hasBits0 |= 2;
@@ -2403,14 +2477,14 @@ namespace TransitRealtime {
 
         /// <summary>Field number for the "stop_time_properties" field.</summary>
         public const int StopTimePropertiesFieldNumber = 6;
-        private global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.StopTimeProperties stopTimeProperties_;
+        private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.StopTimeProperties stopTimeProperties_;
         /// <summary>
         /// Realtime updates for certain properties defined within GTFS stop_times.txt
         /// NOTE: This field is still experimental, and subject to change. It may be formally adopted in the future.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.StopTimeProperties StopTimeProperties {
+        public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.StopTimeProperties StopTimeProperties {
           get { return stopTimeProperties_; }
           set {
             stopTimeProperties_ = value;
@@ -2590,13 +2664,13 @@ namespace TransitRealtime {
           }
           if (other.arrival_ != null) {
             if (arrival_ == null) {
-              Arrival = new global::TransitRealtime.TripUpdate.Types.StopTimeEvent();
+              Arrival = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeEvent();
             }
             Arrival.MergeFrom(other.Arrival);
           }
           if (other.departure_ != null) {
             if (departure_ == null) {
-              Departure = new global::TransitRealtime.TripUpdate.Types.StopTimeEvent();
+              Departure = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeEvent();
             }
             Departure.MergeFrom(other.Departure);
           }
@@ -2605,7 +2679,7 @@ namespace TransitRealtime {
           }
           if (other.stopTimeProperties_ != null) {
             if (stopTimeProperties_ == null) {
-              StopTimeProperties = new global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.StopTimeProperties();
+              StopTimeProperties = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.StopTimeProperties();
             }
             StopTimeProperties.MergeFrom(other.StopTimeProperties);
           }
@@ -2621,7 +2695,11 @@ namespace TransitRealtime {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -2633,14 +2711,14 @@ namespace TransitRealtime {
               }
               case 18: {
                 if (arrival_ == null) {
-                  Arrival = new global::TransitRealtime.TripUpdate.Types.StopTimeEvent();
+                  Arrival = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeEvent();
                 }
                 input.ReadMessage(Arrival);
                 break;
               }
               case 26: {
                 if (departure_ == null) {
-                  Departure = new global::TransitRealtime.TripUpdate.Types.StopTimeEvent();
+                  Departure = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeEvent();
                 }
                 input.ReadMessage(Departure);
                 break;
@@ -2650,12 +2728,12 @@ namespace TransitRealtime {
                 break;
               }
               case 40: {
-                ScheduleRelationship = (global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.ScheduleRelationship) input.ReadEnum();
+                ScheduleRelationship = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.ScheduleRelationship) input.ReadEnum();
                 break;
               }
               case 50: {
                 if (stopTimeProperties_ == null) {
-                  StopTimeProperties = new global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.StopTimeProperties();
+                  StopTimeProperties = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.StopTimeProperties();
                 }
                 input.ReadMessage(StopTimeProperties);
                 break;
@@ -2671,7 +2749,11 @@ namespace TransitRealtime {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -2683,14 +2765,14 @@ namespace TransitRealtime {
               }
               case 18: {
                 if (arrival_ == null) {
-                  Arrival = new global::TransitRealtime.TripUpdate.Types.StopTimeEvent();
+                  Arrival = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeEvent();
                 }
                 input.ReadMessage(Arrival);
                 break;
               }
               case 26: {
                 if (departure_ == null) {
-                  Departure = new global::TransitRealtime.TripUpdate.Types.StopTimeEvent();
+                  Departure = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeEvent();
                 }
                 input.ReadMessage(Departure);
                 break;
@@ -2700,12 +2782,12 @@ namespace TransitRealtime {
                 break;
               }
               case 40: {
-                ScheduleRelationship = (global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.ScheduleRelationship) input.ReadEnum();
+                ScheduleRelationship = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.ScheduleRelationship) input.ReadEnum();
                 break;
               }
               case 50: {
                 if (stopTimeProperties_ == null) {
-                  StopTimeProperties = new global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.StopTimeProperties();
+                  StopTimeProperties = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Types.StopTimeProperties();
                 }
                 input.ReadMessage(StopTimeProperties);
                 break;
@@ -2783,6 +2865,7 @@ namespace TransitRealtime {
           /// Provides the updated values for the stop time.
           /// NOTE: This message is still experimental, and subject to change. It may be formally adopted in the future.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class StopTimeProperties : pb::IExtendableMessage<StopTimeProperties>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -2799,7 +2882,7 @@ namespace TransitRealtime {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public static pbr::MessageDescriptor Descriptor {
-              get { return global::TransitRealtime.TripUpdate.Types.StopTimeUpdate.Descriptor.NestedTypes[0]; }
+              get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Types.StopTimeUpdate.Descriptor.NestedTypes[0]; }
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2986,7 +3069,11 @@ namespace TransitRealtime {
             #else
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
                       _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -3007,7 +3094,11 @@ namespace TransitRealtime {
             void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
                       _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -3055,6 +3146,7 @@ namespace TransitRealtime {
       /// Defines updated properties of the trip
       /// NOTE: This message is still experimental, and subject to change. It may be formally adopted in the future.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class TripProperties : pb::IExtendableMessage<TripProperties>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -3071,7 +3163,7 @@ namespace TransitRealtime {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::TransitRealtime.TripUpdate.Descriptor.NestedTypes[2]; }
+          get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripUpdate.Descriptor.NestedTypes[2]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3356,7 +3448,11 @@ namespace TransitRealtime {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -3385,7 +3481,11 @@ namespace TransitRealtime {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -3440,6 +3540,7 @@ namespace TransitRealtime {
   /// <summary>
   /// Realtime positioning information for a given vehicle.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VehiclePosition : pb::IExtendableMessage<VehiclePosition>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3457,7 +3558,7 @@ namespace TransitRealtime {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[4]; }
+      get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3501,7 +3602,7 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "trip" field.</summary>
     public const int TripFieldNumber = 1;
-    private global::TransitRealtime.TripDescriptor trip_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor trip_;
     /// <summary>
     /// The Trip that this vehicle is serving.
     /// Can be empty or partial if the vehicle can not be identified with a given
@@ -3509,7 +3610,7 @@ namespace TransitRealtime {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.TripDescriptor Trip {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor Trip {
       get { return trip_; }
       set {
         trip_ = value;
@@ -3518,13 +3619,13 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "vehicle" field.</summary>
     public const int VehicleFieldNumber = 8;
-    private global::TransitRealtime.VehicleDescriptor vehicle_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehicleDescriptor vehicle_;
     /// <summary>
     /// Additional information on the vehicle that is serving this trip.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.VehicleDescriptor Vehicle {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehicleDescriptor Vehicle {
       get { return vehicle_; }
       set {
         vehicle_ = value;
@@ -3533,13 +3634,13 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "position" field.</summary>
     public const int PositionFieldNumber = 2;
-    private global::TransitRealtime.Position position_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Position position_;
     /// <summary>
     /// Current position of this vehicle.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.Position Position {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Position Position {
       get { return position_; }
       set {
         position_ = value;
@@ -3611,16 +3712,16 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "current_status" field.</summary>
     public const int CurrentStatusFieldNumber = 4;
-    private readonly static global::TransitRealtime.VehiclePosition.Types.VehicleStopStatus CurrentStatusDefaultValue = global::TransitRealtime.VehiclePosition.Types.VehicleStopStatus.InTransitTo;
+    private readonly static global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.VehicleStopStatus CurrentStatusDefaultValue = global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.VehicleStopStatus.InTransitTo;
 
-    private global::TransitRealtime.VehiclePosition.Types.VehicleStopStatus currentStatus_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.VehicleStopStatus currentStatus_;
     /// <summary>
     /// The exact status of the vehicle with respect to the current stop.
     /// Ignored if current_stop_sequence is missing.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.VehiclePosition.Types.VehicleStopStatus CurrentStatus {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.VehicleStopStatus CurrentStatus {
       get { if ((_hasBits0 & 2) != 0) { return currentStatus_; } else { return CurrentStatusDefaultValue; } }
       set {
         _hasBits0 |= 2;
@@ -3673,12 +3774,12 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "congestion_level" field.</summary>
     public const int CongestionLevelFieldNumber = 6;
-    private readonly static global::TransitRealtime.VehiclePosition.Types.CongestionLevel CongestionLevelDefaultValue = global::TransitRealtime.VehiclePosition.Types.CongestionLevel.UnknownCongestionLevel;
+    private readonly static global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.CongestionLevel CongestionLevelDefaultValue = global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.CongestionLevel.UnknownCongestionLevel;
 
-    private global::TransitRealtime.VehiclePosition.Types.CongestionLevel congestionLevel_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.CongestionLevel congestionLevel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.VehiclePosition.Types.CongestionLevel CongestionLevel {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.CongestionLevel CongestionLevel {
       get { if ((_hasBits0 & 8) != 0) { return congestionLevel_; } else { return CongestionLevelDefaultValue; } }
       set {
         _hasBits0 |= 8;
@@ -3700,16 +3801,16 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "occupancy_status" field.</summary>
     public const int OccupancyStatusFieldNumber = 9;
-    private readonly static global::TransitRealtime.VehiclePosition.Types.OccupancyStatus OccupancyStatusDefaultValue = global::TransitRealtime.VehiclePosition.Types.OccupancyStatus.Empty;
+    private readonly static global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.OccupancyStatus OccupancyStatusDefaultValue = global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.OccupancyStatus.Empty;
 
-    private global::TransitRealtime.VehiclePosition.Types.OccupancyStatus occupancyStatus_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.OccupancyStatus occupancyStatus_;
     /// <summary>
     /// If multi_carriage_status is populated with per-carriage OccupancyStatus,
     /// then this field should describe the entire vehicle with all carriages accepting passengers considered.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.VehiclePosition.Types.OccupancyStatus OccupancyStatus {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.OccupancyStatus OccupancyStatus {
       get { if ((_hasBits0 & 16) != 0) { return occupancyStatus_; } else { return OccupancyStatusDefaultValue; } }
       set {
         _hasBits0 |= 16;
@@ -3769,9 +3870,9 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "multi_carriage_details" field.</summary>
     public const int MultiCarriageDetailsFieldNumber = 11;
-    private static readonly pb::FieldCodec<global::TransitRealtime.VehiclePosition.Types.CarriageDetails> _repeated_multiCarriageDetails_codec
-        = pb::FieldCodec.ForMessage(90, global::TransitRealtime.VehiclePosition.Types.CarriageDetails.Parser);
-    private readonly pbc::RepeatedField<global::TransitRealtime.VehiclePosition.Types.CarriageDetails> multiCarriageDetails_ = new pbc::RepeatedField<global::TransitRealtime.VehiclePosition.Types.CarriageDetails>();
+    private static readonly pb::FieldCodec<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.CarriageDetails> _repeated_multiCarriageDetails_codec
+        = pb::FieldCodec.ForMessage(90, global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.CarriageDetails.Parser);
+    private readonly pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.CarriageDetails> multiCarriageDetails_ = new pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.CarriageDetails>();
     /// <summary>
     /// Details of the multiple carriages of this given vehicle.
     /// The first occurrence represents the first carriage of the vehicle, 
@@ -3785,7 +3886,7 @@ namespace TransitRealtime {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::TransitRealtime.VehiclePosition.Types.CarriageDetails> MultiCarriageDetails {
+    public pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.CarriageDetails> MultiCarriageDetails {
       get { return multiCarriageDetails_; }
     }
 
@@ -4013,19 +4114,19 @@ namespace TransitRealtime {
       }
       if (other.trip_ != null) {
         if (trip_ == null) {
-          Trip = new global::TransitRealtime.TripDescriptor();
+          Trip = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor();
         }
         Trip.MergeFrom(other.Trip);
       }
       if (other.vehicle_ != null) {
         if (vehicle_ == null) {
-          Vehicle = new global::TransitRealtime.VehicleDescriptor();
+          Vehicle = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehicleDescriptor();
         }
         Vehicle.MergeFrom(other.Vehicle);
       }
       if (other.position_ != null) {
         if (position_ == null) {
-          Position = new global::TransitRealtime.Position();
+          Position = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Position();
         }
         Position.MergeFrom(other.Position);
       }
@@ -4063,7 +4164,11 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -4071,14 +4176,14 @@ namespace TransitRealtime {
             break;
           case 10: {
             if (trip_ == null) {
-              Trip = new global::TransitRealtime.TripDescriptor();
+              Trip = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor();
             }
             input.ReadMessage(Trip);
             break;
           }
           case 18: {
             if (position_ == null) {
-              Position = new global::TransitRealtime.Position();
+              Position = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Position();
             }
             input.ReadMessage(Position);
             break;
@@ -4088,7 +4193,7 @@ namespace TransitRealtime {
             break;
           }
           case 32: {
-            CurrentStatus = (global::TransitRealtime.VehiclePosition.Types.VehicleStopStatus) input.ReadEnum();
+            CurrentStatus = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.VehicleStopStatus) input.ReadEnum();
             break;
           }
           case 40: {
@@ -4096,7 +4201,7 @@ namespace TransitRealtime {
             break;
           }
           case 48: {
-            CongestionLevel = (global::TransitRealtime.VehiclePosition.Types.CongestionLevel) input.ReadEnum();
+            CongestionLevel = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.CongestionLevel) input.ReadEnum();
             break;
           }
           case 58: {
@@ -4105,13 +4210,13 @@ namespace TransitRealtime {
           }
           case 66: {
             if (vehicle_ == null) {
-              Vehicle = new global::TransitRealtime.VehicleDescriptor();
+              Vehicle = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehicleDescriptor();
             }
             input.ReadMessage(Vehicle);
             break;
           }
           case 72: {
-            OccupancyStatus = (global::TransitRealtime.VehiclePosition.Types.OccupancyStatus) input.ReadEnum();
+            OccupancyStatus = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.OccupancyStatus) input.ReadEnum();
             break;
           }
           case 80: {
@@ -4133,7 +4238,11 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -4141,14 +4250,14 @@ namespace TransitRealtime {
             break;
           case 10: {
             if (trip_ == null) {
-              Trip = new global::TransitRealtime.TripDescriptor();
+              Trip = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor();
             }
             input.ReadMessage(Trip);
             break;
           }
           case 18: {
             if (position_ == null) {
-              Position = new global::TransitRealtime.Position();
+              Position = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Position();
             }
             input.ReadMessage(Position);
             break;
@@ -4158,7 +4267,7 @@ namespace TransitRealtime {
             break;
           }
           case 32: {
-            CurrentStatus = (global::TransitRealtime.VehiclePosition.Types.VehicleStopStatus) input.ReadEnum();
+            CurrentStatus = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.VehicleStopStatus) input.ReadEnum();
             break;
           }
           case 40: {
@@ -4166,7 +4275,7 @@ namespace TransitRealtime {
             break;
           }
           case 48: {
-            CongestionLevel = (global::TransitRealtime.VehiclePosition.Types.CongestionLevel) input.ReadEnum();
+            CongestionLevel = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.CongestionLevel) input.ReadEnum();
             break;
           }
           case 58: {
@@ -4175,13 +4284,13 @@ namespace TransitRealtime {
           }
           case 66: {
             if (vehicle_ == null) {
-              Vehicle = new global::TransitRealtime.VehicleDescriptor();
+              Vehicle = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehicleDescriptor();
             }
             input.ReadMessage(Vehicle);
             break;
           }
           case 72: {
-            OccupancyStatus = (global::TransitRealtime.VehiclePosition.Types.OccupancyStatus) input.ReadEnum();
+            OccupancyStatus = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.OccupancyStatus) input.ReadEnum();
             break;
           }
           case 80: {
@@ -4311,6 +4420,7 @@ namespace TransitRealtime {
       /// Carriage specific details, used for vehicles composed of several carriages
       /// This message/field is still experimental, and subject to change. It may be formally adopted in the future.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class CarriageDetails : pb::IExtendableMessage<CarriageDetails>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4328,7 +4438,7 @@ namespace TransitRealtime {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::TransitRealtime.VehiclePosition.Descriptor.NestedTypes[0]; }
+          get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Descriptor.NestedTypes[0]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4426,16 +4536,16 @@ namespace TransitRealtime {
 
         /// <summary>Field number for the "occupancy_status" field.</summary>
         public const int OccupancyStatusFieldNumber = 3;
-        private readonly static global::TransitRealtime.VehiclePosition.Types.OccupancyStatus OccupancyStatusDefaultValue = global::TransitRealtime.VehiclePosition.Types.OccupancyStatus.NoDataAvailable;
+        private readonly static global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.OccupancyStatus OccupancyStatusDefaultValue = global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.OccupancyStatus.NoDataAvailable;
 
-        private global::TransitRealtime.VehiclePosition.Types.OccupancyStatus occupancyStatus_;
+        private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.OccupancyStatus occupancyStatus_;
         /// <summary>
         /// Occupancy status for this given carriage, in this vehicle
         /// This message/field is still experimental, and subject to change. It may be formally adopted in the future.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public global::TransitRealtime.VehiclePosition.Types.OccupancyStatus OccupancyStatus {
+        public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.OccupancyStatus OccupancyStatus {
           get { if ((_hasBits0 & 1) != 0) { return occupancyStatus_; } else { return OccupancyStatusDefaultValue; } }
           set {
             _hasBits0 |= 1;
@@ -4707,7 +4817,11 @@ namespace TransitRealtime {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -4722,7 +4836,7 @@ namespace TransitRealtime {
                 break;
               }
               case 24: {
-                OccupancyStatus = (global::TransitRealtime.VehiclePosition.Types.OccupancyStatus) input.ReadEnum();
+                OccupancyStatus = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.OccupancyStatus) input.ReadEnum();
                 break;
               }
               case 32: {
@@ -4744,7 +4858,11 @@ namespace TransitRealtime {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -4759,7 +4877,7 @@ namespace TransitRealtime {
                 break;
               }
               case 24: {
-                OccupancyStatus = (global::TransitRealtime.VehiclePosition.Types.OccupancyStatus) input.ReadEnum();
+                OccupancyStatus = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.VehiclePosition.Types.OccupancyStatus) input.ReadEnum();
                 break;
               }
               case 32: {
@@ -4807,6 +4925,7 @@ namespace TransitRealtime {
   /// <summary>
   /// An alert, indicating some sort of incident in the public transit network.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Alert : pb::IExtendableMessage<Alert>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4824,7 +4943,7 @@ namespace TransitRealtime {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[5]; }
+      get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4867,9 +4986,9 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "active_period" field.</summary>
     public const int ActivePeriodFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::TransitRealtime.TimeRange> _repeated_activePeriod_codec
-        = pb::FieldCodec.ForMessage(10, global::TransitRealtime.TimeRange.Parser);
-    private readonly pbc::RepeatedField<global::TransitRealtime.TimeRange> activePeriod_ = new pbc::RepeatedField<global::TransitRealtime.TimeRange>();
+    private static readonly pb::FieldCodec<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TimeRange> _repeated_activePeriod_codec
+        = pb::FieldCodec.ForMessage(10, global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TimeRange.Parser);
+    private readonly pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TimeRange> activePeriod_ = new pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TimeRange>();
     /// <summary>
     /// Time when the alert should be shown to the user. If missing, the
     /// alert will be shown as long as it appears in the feed.
@@ -4877,32 +4996,32 @@ namespace TransitRealtime {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::TransitRealtime.TimeRange> ActivePeriod {
+    public pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TimeRange> ActivePeriod {
       get { return activePeriod_; }
     }
 
     /// <summary>Field number for the "informed_entity" field.</summary>
     public const int InformedEntityFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::TransitRealtime.EntitySelector> _repeated_informedEntity_codec
-        = pb::FieldCodec.ForMessage(42, global::TransitRealtime.EntitySelector.Parser);
-    private readonly pbc::RepeatedField<global::TransitRealtime.EntitySelector> informedEntity_ = new pbc::RepeatedField<global::TransitRealtime.EntitySelector>();
+    private static readonly pb::FieldCodec<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.EntitySelector> _repeated_informedEntity_codec
+        = pb::FieldCodec.ForMessage(42, global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.EntitySelector.Parser);
+    private readonly pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.EntitySelector> informedEntity_ = new pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.EntitySelector>();
     /// <summary>
     /// Entities whose users we should notify of this alert.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::TransitRealtime.EntitySelector> InformedEntity {
+    public pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.EntitySelector> InformedEntity {
       get { return informedEntity_; }
     }
 
     /// <summary>Field number for the "cause" field.</summary>
     public const int CauseFieldNumber = 6;
-    private readonly static global::TransitRealtime.Alert.Types.Cause CauseDefaultValue = global::TransitRealtime.Alert.Types.Cause.UnknownCause;
+    private readonly static global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.Cause CauseDefaultValue = global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.Cause.UnknownCause;
 
-    private global::TransitRealtime.Alert.Types.Cause cause_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.Cause cause_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.Alert.Types.Cause Cause {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.Cause Cause {
       get { if ((_hasBits0 & 1) != 0) { return cause_; } else { return CauseDefaultValue; } }
       set {
         _hasBits0 |= 1;
@@ -4924,12 +5043,12 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "effect" field.</summary>
     public const int EffectFieldNumber = 7;
-    private readonly static global::TransitRealtime.Alert.Types.Effect EffectDefaultValue = global::TransitRealtime.Alert.Types.Effect.UnknownEffect;
+    private readonly static global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.Effect EffectDefaultValue = global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.Effect.UnknownEffect;
 
-    private global::TransitRealtime.Alert.Types.Effect effect_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.Effect effect_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.Alert.Types.Effect Effect {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.Effect Effect {
       get { if ((_hasBits0 & 2) != 0) { return effect_; } else { return EffectDefaultValue; } }
       set {
         _hasBits0 |= 2;
@@ -4951,13 +5070,13 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "url" field.</summary>
     public const int UrlFieldNumber = 8;
-    private global::TransitRealtime.TranslatedString url_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString url_;
     /// <summary>
     /// The URL which provides additional information about the alert.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.TranslatedString Url {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString Url {
       get { return url_; }
       set {
         url_ = value;
@@ -4966,13 +5085,13 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "header_text" field.</summary>
     public const int HeaderTextFieldNumber = 10;
-    private global::TransitRealtime.TranslatedString headerText_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString headerText_;
     /// <summary>
     /// Alert header. Contains a short summary of the alert text as plain-text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.TranslatedString HeaderText {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString HeaderText {
       get { return headerText_; }
       set {
         headerText_ = value;
@@ -4981,14 +5100,14 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "description_text" field.</summary>
     public const int DescriptionTextFieldNumber = 11;
-    private global::TransitRealtime.TranslatedString descriptionText_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString descriptionText_;
     /// <summary>
     /// Full description for the alert as plain-text. The information in the
     /// description should add to the information of the header.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.TranslatedString DescriptionText {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString DescriptionText {
       get { return descriptionText_; }
       set {
         descriptionText_ = value;
@@ -4997,13 +5116,13 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "tts_header_text" field.</summary>
     public const int TtsHeaderTextFieldNumber = 12;
-    private global::TransitRealtime.TranslatedString ttsHeaderText_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString ttsHeaderText_;
     /// <summary>
     /// Text for alert header to be used in text-to-speech implementations. This field is the text-to-speech version of header_text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.TranslatedString TtsHeaderText {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString TtsHeaderText {
       get { return ttsHeaderText_; }
       set {
         ttsHeaderText_ = value;
@@ -5012,13 +5131,13 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "tts_description_text" field.</summary>
     public const int TtsDescriptionTextFieldNumber = 13;
-    private global::TransitRealtime.TranslatedString ttsDescriptionText_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString ttsDescriptionText_;
     /// <summary>
     /// Text for full description for the alert to be used in text-to-speech implementations. This field is the text-to-speech version of description_text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.TranslatedString TtsDescriptionText {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString TtsDescriptionText {
       get { return ttsDescriptionText_; }
       set {
         ttsDescriptionText_ = value;
@@ -5027,12 +5146,12 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "severity_level" field.</summary>
     public const int SeverityLevelFieldNumber = 14;
-    private readonly static global::TransitRealtime.Alert.Types.SeverityLevel SeverityLevelDefaultValue = global::TransitRealtime.Alert.Types.SeverityLevel.UnknownSeverity;
+    private readonly static global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.SeverityLevel SeverityLevelDefaultValue = global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.SeverityLevel.UnknownSeverity;
 
-    private global::TransitRealtime.Alert.Types.SeverityLevel severityLevel_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.SeverityLevel severityLevel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.Alert.Types.SeverityLevel SeverityLevel {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.SeverityLevel SeverityLevel {
       get { if ((_hasBits0 & 4) != 0) { return severityLevel_; } else { return SeverityLevelDefaultValue; } }
       set {
         _hasBits0 |= 4;
@@ -5263,31 +5382,31 @@ namespace TransitRealtime {
       }
       if (other.url_ != null) {
         if (url_ == null) {
-          Url = new global::TransitRealtime.TranslatedString();
+          Url = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString();
         }
         Url.MergeFrom(other.Url);
       }
       if (other.headerText_ != null) {
         if (headerText_ == null) {
-          HeaderText = new global::TransitRealtime.TranslatedString();
+          HeaderText = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString();
         }
         HeaderText.MergeFrom(other.HeaderText);
       }
       if (other.descriptionText_ != null) {
         if (descriptionText_ == null) {
-          DescriptionText = new global::TransitRealtime.TranslatedString();
+          DescriptionText = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString();
         }
         DescriptionText.MergeFrom(other.DescriptionText);
       }
       if (other.ttsHeaderText_ != null) {
         if (ttsHeaderText_ == null) {
-          TtsHeaderText = new global::TransitRealtime.TranslatedString();
+          TtsHeaderText = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString();
         }
         TtsHeaderText.MergeFrom(other.TtsHeaderText);
       }
       if (other.ttsDescriptionText_ != null) {
         if (ttsDescriptionText_ == null) {
-          TtsDescriptionText = new global::TransitRealtime.TranslatedString();
+          TtsDescriptionText = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString();
         }
         TtsDescriptionText.MergeFrom(other.TtsDescriptionText);
       }
@@ -5306,7 +5425,11 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -5321,50 +5444,50 @@ namespace TransitRealtime {
             break;
           }
           case 48: {
-            Cause = (global::TransitRealtime.Alert.Types.Cause) input.ReadEnum();
+            Cause = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.Cause) input.ReadEnum();
             break;
           }
           case 56: {
-            Effect = (global::TransitRealtime.Alert.Types.Effect) input.ReadEnum();
+            Effect = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.Effect) input.ReadEnum();
             break;
           }
           case 66: {
             if (url_ == null) {
-              Url = new global::TransitRealtime.TranslatedString();
+              Url = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString();
             }
             input.ReadMessage(Url);
             break;
           }
           case 82: {
             if (headerText_ == null) {
-              HeaderText = new global::TransitRealtime.TranslatedString();
+              HeaderText = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString();
             }
             input.ReadMessage(HeaderText);
             break;
           }
           case 90: {
             if (descriptionText_ == null) {
-              DescriptionText = new global::TransitRealtime.TranslatedString();
+              DescriptionText = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString();
             }
             input.ReadMessage(DescriptionText);
             break;
           }
           case 98: {
             if (ttsHeaderText_ == null) {
-              TtsHeaderText = new global::TransitRealtime.TranslatedString();
+              TtsHeaderText = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString();
             }
             input.ReadMessage(TtsHeaderText);
             break;
           }
           case 106: {
             if (ttsDescriptionText_ == null) {
-              TtsDescriptionText = new global::TransitRealtime.TranslatedString();
+              TtsDescriptionText = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString();
             }
             input.ReadMessage(TtsDescriptionText);
             break;
           }
           case 112: {
-            SeverityLevel = (global::TransitRealtime.Alert.Types.SeverityLevel) input.ReadEnum();
+            SeverityLevel = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.SeverityLevel) input.ReadEnum();
             break;
           }
         }
@@ -5378,7 +5501,11 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -5393,50 +5520,50 @@ namespace TransitRealtime {
             break;
           }
           case 48: {
-            Cause = (global::TransitRealtime.Alert.Types.Cause) input.ReadEnum();
+            Cause = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.Cause) input.ReadEnum();
             break;
           }
           case 56: {
-            Effect = (global::TransitRealtime.Alert.Types.Effect) input.ReadEnum();
+            Effect = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.Effect) input.ReadEnum();
             break;
           }
           case 66: {
             if (url_ == null) {
-              Url = new global::TransitRealtime.TranslatedString();
+              Url = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString();
             }
             input.ReadMessage(Url);
             break;
           }
           case 82: {
             if (headerText_ == null) {
-              HeaderText = new global::TransitRealtime.TranslatedString();
+              HeaderText = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString();
             }
             input.ReadMessage(HeaderText);
             break;
           }
           case 90: {
             if (descriptionText_ == null) {
-              DescriptionText = new global::TransitRealtime.TranslatedString();
+              DescriptionText = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString();
             }
             input.ReadMessage(DescriptionText);
             break;
           }
           case 98: {
             if (ttsHeaderText_ == null) {
-              TtsHeaderText = new global::TransitRealtime.TranslatedString();
+              TtsHeaderText = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString();
             }
             input.ReadMessage(TtsHeaderText);
             break;
           }
           case 106: {
             if (ttsDescriptionText_ == null) {
-              TtsDescriptionText = new global::TransitRealtime.TranslatedString();
+              TtsDescriptionText = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString();
             }
             input.ReadMessage(TtsDescriptionText);
             break;
           }
           case 112: {
-            SeverityLevel = (global::TransitRealtime.Alert.Types.SeverityLevel) input.ReadEnum();
+            SeverityLevel = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.Alert.Types.SeverityLevel) input.ReadEnum();
             break;
           }
         }
@@ -5539,6 +5666,7 @@ namespace TransitRealtime {
   /// A time interval. The interval is considered active at time 't' if 't' is
   /// greater than or equal to the start time and less than the end time.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TimeRange : pb::IExtendableMessage<TimeRange>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5556,7 +5684,7 @@ namespace TransitRealtime {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[6]; }
+      get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5784,7 +5912,11 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -5809,7 +5941,11 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -5855,6 +5991,7 @@ namespace TransitRealtime {
   /// <summary>
   /// A position.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Position : pb::IExtendableMessage<Position>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5872,7 +6009,7 @@ namespace TransitRealtime {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[7]; }
+      get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6241,7 +6378,11 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -6278,7 +6419,11 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -6344,6 +6489,7 @@ namespace TransitRealtime {
   ///   TripUpdate are not sufficient, and stop_ids must be provided as well. In
   ///   addition, absolute arrival/departure times must be provided.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TripDescriptor : pb::IExtendableMessage<TripDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6361,7 +6507,7 @@ namespace TransitRealtime {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[8]; }
+      get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6575,12 +6721,12 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "schedule_relationship" field.</summary>
     public const int ScheduleRelationshipFieldNumber = 4;
-    private readonly static global::TransitRealtime.TripDescriptor.Types.ScheduleRelationship ScheduleRelationshipDefaultValue = global::TransitRealtime.TripDescriptor.Types.ScheduleRelationship.Scheduled;
+    private readonly static global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor.Types.ScheduleRelationship ScheduleRelationshipDefaultValue = global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor.Types.ScheduleRelationship.Scheduled;
 
-    private global::TransitRealtime.TripDescriptor.Types.ScheduleRelationship scheduleRelationship_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor.Types.ScheduleRelationship scheduleRelationship_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.TripDescriptor.Types.ScheduleRelationship ScheduleRelationship {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor.Types.ScheduleRelationship ScheduleRelationship {
       get { if ((_hasBits0 & 1) != 0) { return scheduleRelationship_; } else { return ScheduleRelationshipDefaultValue; } }
       set {
         _hasBits0 |= 1;
@@ -6795,7 +6941,11 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -6814,7 +6964,7 @@ namespace TransitRealtime {
             break;
           }
           case 32: {
-            ScheduleRelationship = (global::TransitRealtime.TripDescriptor.Types.ScheduleRelationship) input.ReadEnum();
+            ScheduleRelationship = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor.Types.ScheduleRelationship) input.ReadEnum();
             break;
           }
           case 42: {
@@ -6836,7 +6986,11 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -6855,7 +7009,7 @@ namespace TransitRealtime {
             break;
           }
           case 32: {
-            ScheduleRelationship = (global::TransitRealtime.TripDescriptor.Types.ScheduleRelationship) input.ReadEnum();
+            ScheduleRelationship = (global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor.Types.ScheduleRelationship) input.ReadEnum();
             break;
           }
           case 42: {
@@ -6931,6 +7085,7 @@ namespace TransitRealtime {
         /// <summary>
         /// Should not be used - for backwards-compatibility only.
         /// </summary>
+        [global::System.ObsoleteAttribute]
         [pbr::OriginalName("REPLACEMENT")] Replacement = 5,
         /// <summary>
         /// An extra trip that was added in addition to a running schedule, for example, to replace a broken vehicle or to
@@ -6960,6 +7115,7 @@ namespace TransitRealtime {
   /// <summary>
   /// Identification information for the vehicle performing the trip.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VehicleDescriptor : pb::IExtendableMessage<VehicleDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6976,7 +7132,7 @@ namespace TransitRealtime {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[9]; }
+      get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7246,7 +7402,11 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -7275,7 +7435,11 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -7325,6 +7489,7 @@ namespace TransitRealtime {
   /// <summary>
   /// A selector for an entity in a GTFS feed.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EntitySelector : pb::IExtendableMessage<EntitySelector>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7342,7 +7507,7 @@ namespace TransitRealtime {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[10]; }
+      get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7469,10 +7634,10 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "trip" field.</summary>
     public const int TripFieldNumber = 4;
-    private global::TransitRealtime.TripDescriptor trip_;
+    private global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor trip_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::TransitRealtime.TripDescriptor Trip {
+    public global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor Trip {
       get { return trip_; }
       set {
         trip_ = value;
@@ -7712,7 +7877,7 @@ namespace TransitRealtime {
       }
       if (other.trip_ != null) {
         if (trip_ == null) {
-          Trip = new global::TransitRealtime.TripDescriptor();
+          Trip = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor();
         }
         Trip.MergeFrom(other.Trip);
       }
@@ -7734,7 +7899,11 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -7754,7 +7923,7 @@ namespace TransitRealtime {
           }
           case 34: {
             if (trip_ == null) {
-              Trip = new global::TransitRealtime.TripDescriptor();
+              Trip = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor();
             }
             input.ReadMessage(Trip);
             break;
@@ -7778,7 +7947,11 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -7798,7 +7971,7 @@ namespace TransitRealtime {
           }
           case 34: {
             if (trip_ == null) {
-              Trip = new global::TransitRealtime.TripDescriptor();
+              Trip = new global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TripDescriptor();
             }
             input.ReadMessage(Trip);
             break;
@@ -7852,6 +8025,7 @@ namespace TransitRealtime {
   /// 3. If some translation has an unspecified language code, that translation is
   ///    picked.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TranslatedString : pb::IExtendableMessage<TranslatedString>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7868,7 +8042,7 @@ namespace TransitRealtime {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[11]; }
+      get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.GtfsRealtimeReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7901,15 +8075,15 @@ namespace TransitRealtime {
 
     /// <summary>Field number for the "translation" field.</summary>
     public const int TranslationFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::TransitRealtime.TranslatedString.Types.Translation> _repeated_translation_codec
-        = pb::FieldCodec.ForMessage(10, global::TransitRealtime.TranslatedString.Types.Translation.Parser);
-    private readonly pbc::RepeatedField<global::TransitRealtime.TranslatedString.Types.Translation> translation_ = new pbc::RepeatedField<global::TransitRealtime.TranslatedString.Types.Translation>();
+    private static readonly pb::FieldCodec<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString.Types.Translation> _repeated_translation_codec
+        = pb::FieldCodec.ForMessage(10, global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString.Types.Translation.Parser);
+    private readonly pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString.Types.Translation> translation_ = new pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString.Types.Translation>();
     /// <summary>
     /// At least one translation must be provided.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::TransitRealtime.TranslatedString.Types.Translation> Translation {
+    public pbc::RepeatedField<global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString.Types.Translation> Translation {
       get { return translation_; }
     }
 
@@ -8018,7 +8192,11 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -8039,7 +8217,11 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -8081,6 +8263,7 @@ namespace TransitRealtime {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Translation : pb::IExtendableMessage<Translation>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -8097,7 +8280,7 @@ namespace TransitRealtime {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::TransitRealtime.TranslatedString.Descriptor.NestedTypes[0]; }
+          get { return global::ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime.TranslatedString.Descriptor.NestedTypes[0]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8320,7 +8503,11 @@ namespace TransitRealtime {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -8345,7 +8532,11 @@ namespace TransitRealtime {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);

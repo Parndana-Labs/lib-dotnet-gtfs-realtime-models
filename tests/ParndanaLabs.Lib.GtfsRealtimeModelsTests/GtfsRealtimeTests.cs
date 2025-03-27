@@ -1,4 +1,4 @@
-using TransitRealtime;
+using ParndanaLabs.Lib.GtfsRealtimeModels.TransitRealtime;
 
 namespace ParndanaLabs.Lib.GtfsRealtimeModelsTests;
 
