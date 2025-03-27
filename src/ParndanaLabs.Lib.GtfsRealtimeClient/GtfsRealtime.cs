@@ -170,7 +170,6 @@ namespace TransitRealtime {
   /// https://github.com/google/transit/tree/master/gtfs-realtime for field
   /// semantic cardinality.
   /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FeedMessage : pb::IExtendableMessage<FeedMessage>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -372,11 +371,7 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -404,11 +399,7 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -457,7 +448,6 @@ namespace TransitRealtime {
   /// <summary>
   /// Metadata about a feed, included in feed messages.
   /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FeedHeader : pb::IExtendableMessage<FeedHeader>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -745,11 +735,7 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -778,11 +764,7 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -852,7 +834,6 @@ namespace TransitRealtime {
   /// <summary>
   /// A definition (or update) of an entity in the transit feed.
   /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FeedEntity : pb::IExtendableMessage<FeedEntity>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1201,11 +1182,7 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -1251,11 +1228,7 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -1347,7 +1320,6 @@ namespace TransitRealtime {
   /// Note that the feed provider is allowed, but not required, to purge past
   /// updates - this is one case where this would be practically useful.
   /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TripUpdate : pb::IExtendableMessage<TripUpdate>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1751,11 +1723,7 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -1805,11 +1773,7 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -1897,7 +1861,6 @@ namespace TransitRealtime {
       /// for the uncertainty to be 0, for example for trains that are driven under
       /// computer timing control.
       /// </summary>
-      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class StopTimeEvent : pb::IExtendableMessage<StopTimeEvent>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -2193,11 +2156,7 @@ namespace TransitRealtime {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-          if ((tag & 7) == 4) {
-            // Abort on any end group tag.
-            return;
-          }
-          switch(tag) {
+            switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -2226,11 +2185,7 @@ namespace TransitRealtime {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-          if ((tag & 7) == 4) {
-            // Abort on any end group tag.
-            return;
-          }
-          switch(tag) {
+            switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -2282,7 +2237,6 @@ namespace TransitRealtime {
       /// trip. Updates can be supplied for both past and future events.
       /// The producer is allowed, although not required, to drop past events.
       /// </summary>
-      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class StopTimeUpdate : pb::IExtendableMessage<StopTimeUpdate>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -2667,11 +2621,7 @@ namespace TransitRealtime {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-          if ((tag & 7) == 4) {
-            // Abort on any end group tag.
-            return;
-          }
-          switch(tag) {
+            switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -2721,11 +2671,7 @@ namespace TransitRealtime {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-          if ((tag & 7) == 4) {
-            // Abort on any end group tag.
-            return;
-          }
-          switch(tag) {
+            switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -2837,7 +2783,6 @@ namespace TransitRealtime {
           /// Provides the updated values for the stop time.
           /// NOTE: This message is still experimental, and subject to change. It may be formally adopted in the future.
           /// </summary>
-          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class StopTimeProperties : pb::IExtendableMessage<StopTimeProperties>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -3041,11 +2986,7 @@ namespace TransitRealtime {
             #else
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-              if ((tag & 7) == 4) {
-                // Abort on any end group tag.
-                return;
-              }
-              switch(tag) {
+                switch(tag) {
                   default:
                     if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
                       _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -3066,11 +3007,7 @@ namespace TransitRealtime {
             void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-              if ((tag & 7) == 4) {
-                // Abort on any end group tag.
-                return;
-              }
-              switch(tag) {
+                switch(tag) {
                   default:
                     if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
                       _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -3118,7 +3055,6 @@ namespace TransitRealtime {
       /// Defines updated properties of the trip
       /// NOTE: This message is still experimental, and subject to change. It may be formally adopted in the future.
       /// </summary>
-      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class TripProperties : pb::IExtendableMessage<TripProperties>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -3420,11 +3356,7 @@ namespace TransitRealtime {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-          if ((tag & 7) == 4) {
-            // Abort on any end group tag.
-            return;
-          }
-          switch(tag) {
+            switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -3453,11 +3385,7 @@ namespace TransitRealtime {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-          if ((tag & 7) == 4) {
-            // Abort on any end group tag.
-            return;
-          }
-          switch(tag) {
+            switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -3512,7 +3440,6 @@ namespace TransitRealtime {
   /// <summary>
   /// Realtime positioning information for a given vehicle.
   /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VehiclePosition : pb::IExtendableMessage<VehiclePosition>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4136,11 +4063,7 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -4210,11 +4133,7 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -4392,7 +4311,6 @@ namespace TransitRealtime {
       /// Carriage specific details, used for vehicles composed of several carriages
       /// This message/field is still experimental, and subject to change. It may be formally adopted in the future.
       /// </summary>
-      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class CarriageDetails : pb::IExtendableMessage<CarriageDetails>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4789,11 +4707,7 @@ namespace TransitRealtime {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-          if ((tag & 7) == 4) {
-            // Abort on any end group tag.
-            return;
-          }
-          switch(tag) {
+            switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -4830,11 +4744,7 @@ namespace TransitRealtime {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-          if ((tag & 7) == 4) {
-            // Abort on any end group tag.
-            return;
-          }
-          switch(tag) {
+            switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -4897,7 +4807,6 @@ namespace TransitRealtime {
   /// <summary>
   /// An alert, indicating some sort of incident in the public transit network.
   /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Alert : pb::IExtendableMessage<Alert>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5397,11 +5306,7 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -5473,11 +5378,7 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -5638,7 +5539,6 @@ namespace TransitRealtime {
   /// A time interval. The interval is considered active at time 't' if 't' is
   /// greater than or equal to the start time and less than the end time.
   /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TimeRange : pb::IExtendableMessage<TimeRange>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5884,11 +5784,7 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -5913,11 +5809,7 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -5963,7 +5855,6 @@ namespace TransitRealtime {
   /// <summary>
   /// A position.
   /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Position : pb::IExtendableMessage<Position>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6350,11 +6241,7 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -6391,11 +6278,7 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -6461,7 +6344,6 @@ namespace TransitRealtime {
   ///   TripUpdate are not sufficient, and stop_ids must be provided as well. In
   ///   addition, absolute arrival/departure times must be provided.
   /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TripDescriptor : pb::IExtendableMessage<TripDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6913,11 +6795,7 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -6958,11 +6836,7 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -7057,7 +6931,6 @@ namespace TransitRealtime {
         /// <summary>
         /// Should not be used - for backwards-compatibility only.
         /// </summary>
-        [global::System.ObsoleteAttribute]
         [pbr::OriginalName("REPLACEMENT")] Replacement = 5,
         /// <summary>
         /// An extra trip that was added in addition to a running schedule, for example, to replace a broken vehicle or to
@@ -7087,7 +6960,6 @@ namespace TransitRealtime {
   /// <summary>
   /// Identification information for the vehicle performing the trip.
   /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VehicleDescriptor : pb::IExtendableMessage<VehicleDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7374,11 +7246,7 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -7407,11 +7275,7 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -7461,7 +7325,6 @@ namespace TransitRealtime {
   /// <summary>
   /// A selector for an entity in a GTFS feed.
   /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EntitySelector : pb::IExtendableMessage<EntitySelector>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7871,11 +7734,7 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -7919,11 +7778,7 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -7997,7 +7852,6 @@ namespace TransitRealtime {
   /// 3. If some translation has an unspecified language code, that translation is
   ///    picked.
   /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TranslatedString : pb::IExtendableMessage<TranslatedString>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8164,11 +8018,7 @@ namespace TransitRealtime {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -8189,11 +8039,7 @@ namespace TransitRealtime {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
+        switch(tag) {
           default:
             if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
               _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
@@ -8235,7 +8081,6 @@ namespace TransitRealtime {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
-      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Translation : pb::IExtendableMessage<Translation>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -8475,11 +8320,7 @@ namespace TransitRealtime {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-          if ((tag & 7) == 4) {
-            // Abort on any end group tag.
-            return;
-          }
-          switch(tag) {
+            switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
@@ -8504,11 +8345,7 @@ namespace TransitRealtime {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-          if ((tag & 7) == 4) {
-            // Abort on any end group tag.
-            return;
-          }
-          switch(tag) {
+            switch(tag) {
               default:
                 if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
                   _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
